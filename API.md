@@ -72,6 +72,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-local.DataLocalFile.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### File <a name="@cdktf/provider-local.File"></a>
 
@@ -240,6 +247,13 @@ public resetSource()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-local.File.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### LocalProvider <a name="@cdktf/provider-local.LocalProvider"></a>
 
@@ -300,6 +314,13 @@ public resetAlias()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-local.LocalProvider.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ## Structs <a name="Structs"></a>
 

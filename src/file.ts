@@ -50,6 +50,11 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
 */
 export class File extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "local_file";
+
   // ===========
   // INITIALIZER
   // ===========

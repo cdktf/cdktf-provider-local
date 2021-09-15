@@ -20,6 +20,11 @@ export interface LocalProviderConfig {
 */
 export class LocalProvider extends cdktf.TerraformProvider {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "local";
+
   // ===========
   // INITIALIZER
   // ===========
