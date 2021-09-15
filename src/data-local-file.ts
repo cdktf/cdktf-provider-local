@@ -20,6 +20,11 @@ export interface DataLocalFileConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataLocalFile extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "local_file";
+
   // ===========
   // INITIALIZER
   // ===========
