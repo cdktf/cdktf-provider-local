@@ -54,13 +54,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `filenameInput`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.filenameInput"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.id"></a>
 
 - *Type:* `string`
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.id"></a>
+##### `filenameInput`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFile.property.filenameInput"></a>
 
 - *Type:* `string`
 
@@ -157,12 +157,6 @@ public resetSource()
 
 #### Properties <a name="Properties"></a>
 
-##### `filenameInput`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.filenameInput"></a>
-
-- *Type:* `string`
-
----
-
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.id"></a>
 
 - *Type:* `string`
@@ -187,6 +181,12 @@ public resetSource()
 
 ---
 
+##### `filenameInput`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.filenameInput"></a>
+
+- *Type:* `string`
+
+---
+
 ##### `filePermissionInput`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.filePermissionInput"></a>
 
 - *Type:* `string`
@@ -205,43 +205,43 @@ public resetSource()
 
 ---
 
-##### `content`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.content"></a>
-
-- *Type:* `string`
-
----
-
-##### `contentBase64`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.contentBase64"></a>
-
-- *Type:* `string`
-
----
-
-##### `directoryPermission`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.directoryPermission"></a>
-
-- *Type:* `string`
-
----
-
 ##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.filename"></a>
 
 - *Type:* `string`
 
 ---
 
-##### `filePermission`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.filePermission"></a>
+##### `content`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.content"></a>
 
 - *Type:* `string`
 
 ---
 
-##### `sensitiveContent`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.sensitiveContent"></a>
+##### `contentBase64`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.contentBase64"></a>
 
 - *Type:* `string`
 
 ---
 
-##### `source`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.source"></a>
+##### `directoryPermission`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.directoryPermission"></a>
+
+- *Type:* `string`
+
+---
+
+##### `filePermission`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.filePermission"></a>
+
+- *Type:* `string`
+
+---
+
+##### `sensitiveContent`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.sensitiveContent"></a>
+
+- *Type:* `string`
+
+---
+
+##### `source`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.source"></a>
 
 - *Type:* `string`
 
@@ -336,7 +336,7 @@ const dataLocalFileConfig: DataLocalFileConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFileConfig.property.count"></a>
 
-- *Type:* `number`
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -380,7 +380,7 @@ const fileConfig: FileConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.count"></a>
 
-- *Type:* `number`
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
