@@ -91,11 +91,11 @@ export class File extends cdktf.TerraformResource {
   // ==========
 
   // content - computed: false, optional: true, required: false
-  private _content?: string;
+  private _content?: string | undefined; 
   public get content() {
     return this.getStringAttribute('content');
   }
-  public set content(value: string ) {
+  public set content(value: string | undefined) {
     this._content = value;
   }
   public resetContent() {
@@ -107,11 +107,11 @@ export class File extends cdktf.TerraformResource {
   }
 
   // content_base64 - computed: false, optional: true, required: false
-  private _contentBase64?: string;
+  private _contentBase64?: string | undefined; 
   public get contentBase64() {
     return this.getStringAttribute('content_base64');
   }
-  public set contentBase64(value: string ) {
+  public set contentBase64(value: string | undefined) {
     this._contentBase64 = value;
   }
   public resetContentBase64() {
@@ -123,11 +123,11 @@ export class File extends cdktf.TerraformResource {
   }
 
   // directory_permission - computed: false, optional: true, required: false
-  private _directoryPermission?: string;
+  private _directoryPermission?: string | undefined; 
   public get directoryPermission() {
     return this.getStringAttribute('directory_permission');
   }
-  public set directoryPermission(value: string ) {
+  public set directoryPermission(value: string | undefined) {
     this._directoryPermission = value;
   }
   public resetDirectoryPermission() {
@@ -139,11 +139,11 @@ export class File extends cdktf.TerraformResource {
   }
 
   // file_permission - computed: false, optional: true, required: false
-  private _filePermission?: string;
+  private _filePermission?: string | undefined; 
   public get filePermission() {
     return this.getStringAttribute('file_permission');
   }
-  public set filePermission(value: string ) {
+  public set filePermission(value: string | undefined) {
     this._filePermission = value;
   }
   public resetFilePermission() {
@@ -155,7 +155,7 @@ export class File extends cdktf.TerraformResource {
   }
 
   // filename - computed: false, optional: false, required: true
-  private _filename: string;
+  private _filename?: string; 
   public get filename() {
     return this.getStringAttribute('filename');
   }
@@ -173,11 +173,11 @@ export class File extends cdktf.TerraformResource {
   }
 
   // sensitive_content - computed: false, optional: true, required: false
-  private _sensitiveContent?: string;
+  private _sensitiveContent?: string | undefined; 
   public get sensitiveContent() {
     return this.getStringAttribute('sensitive_content');
   }
-  public set sensitiveContent(value: string ) {
+  public set sensitiveContent(value: string | undefined) {
     this._sensitiveContent = value;
   }
   public resetSensitiveContent() {
@@ -189,11 +189,11 @@ export class File extends cdktf.TerraformResource {
   }
 
   // source - computed: false, optional: true, required: false
-  private _source?: string;
+  private _source?: string | undefined; 
   public get source() {
     return this.getStringAttribute('source');
   }
-  public set source(value: string ) {
+  public set source(value: string | undefined) {
     this._source = value;
   }
   public resetSource() {

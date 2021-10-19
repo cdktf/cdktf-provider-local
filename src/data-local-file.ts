@@ -65,7 +65,7 @@ export class DataLocalFile extends cdktf.TerraformDataSource {
   }
 
   // filename - computed: false, optional: false, required: true
-  private _filename: string;
+  private _filename?: string; 
   public get filename() {
     return this.getStringAttribute('filename');
   }
