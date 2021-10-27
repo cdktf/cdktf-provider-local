@@ -6,7 +6,7 @@
 
 Represents a {@link https://www.terraform.io/docs/providers/local/d/file.html local_file}.
 
-#### Initializer <a name="@cdktf/provider-local.DataLocalFile.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-local.DataLocalFile.Initializer"></a>
 
 ```typescript
 import { DataLocalFile } from '@cdktf/provider-local'
@@ -44,11 +44,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `content`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.content"></a>
 
+```typescript
+public readonly content: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `contentBase64`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.contentBase64"></a>
+
+```typescript
+public readonly contentBase64: string;
+```
 
 - *Type:* `string`
 
@@ -56,17 +64,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `filenameInput`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFile.property.filenameInput"></a>
 
+```typescript
+public readonly filenameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.filename"></a>
+
+```typescript
+public readonly filename: string;
+```
 
 - *Type:* `string`
 
@@ -84,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/local/r/file.html local_file}.
 
-#### Initializer <a name="@cdktf/provider-local.File.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-local.File.Initializer"></a>
 
 ```typescript
 import { File } from '@cdktf/provider-local'
@@ -159,11 +179,19 @@ public resetSource()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `contentBase64Input`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.contentBase64Input"></a>
+
+```typescript
+public readonly contentBase64Input: string;
+```
 
 - *Type:* `string`
 
@@ -171,11 +199,19 @@ public resetSource()
 
 ##### `contentInput`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.contentInput"></a>
 
+```typescript
+public readonly contentInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `directoryPermissionInput`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.directoryPermissionInput"></a>
+
+```typescript
+public readonly directoryPermissionInput: string;
+```
 
 - *Type:* `string`
 
@@ -183,11 +219,19 @@ public resetSource()
 
 ##### `filenameInput`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.filenameInput"></a>
 
+```typescript
+public readonly filenameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `filePermissionInput`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.filePermissionInput"></a>
+
+```typescript
+public readonly filePermissionInput: string;
+```
 
 - *Type:* `string`
 
@@ -195,11 +239,19 @@ public resetSource()
 
 ##### `sensitiveContentInput`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.sensitiveContentInput"></a>
 
+```typescript
+public readonly sensitiveContentInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `sourceInput`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.sourceInput"></a>
+
+```typescript
+public readonly sourceInput: string;
+```
 
 - *Type:* `string`
 
@@ -207,11 +259,19 @@ public resetSource()
 
 ##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.filename"></a>
 
+```typescript
+public readonly filename: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `content`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.content"></a>
+
+```typescript
+public readonly content: string;
+```
 
 - *Type:* `string`
 
@@ -219,11 +279,19 @@ public resetSource()
 
 ##### `contentBase64`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.contentBase64"></a>
 
+```typescript
+public readonly contentBase64: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `directoryPermission`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.directoryPermission"></a>
+
+```typescript
+public readonly directoryPermission: string;
+```
 
 - *Type:* `string`
 
@@ -231,17 +299,29 @@ public resetSource()
 
 ##### `filePermission`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.filePermission"></a>
 
+```typescript
+public readonly filePermission: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `sensitiveContent`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.sensitiveContent"></a>
 
+```typescript
+public readonly sensitiveContent: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `source`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
 
 - *Type:* `string`
 
@@ -259,7 +339,7 @@ public resetSource()
 
 Represents a {@link https://www.terraform.io/docs/providers/local local}.
 
-#### Initializer <a name="@cdktf/provider-local.LocalProvider.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-local.LocalProvider.Initializer"></a>
 
 ```typescript
 import { LocalProvider } from '@cdktf/provider-local'
@@ -304,11 +384,19 @@ public resetAlias()
 
 ##### `aliasInput`<sup>Optional</sup> <a name="@cdktf/provider-local.LocalProvider.property.aliasInput"></a>
 
+```typescript
+public readonly aliasInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `alias`<sup>Optional</sup> <a name="@cdktf/provider-local.LocalProvider.property.alias"></a>
+
+```typescript
+public readonly alias: string;
+```
 
 - *Type:* `string`
 
@@ -336,11 +424,19 @@ const dataLocalFileConfig: DataLocalFileConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFileConfig.property.count"></a>
 
+```typescript
+public readonly count: number | IResolvable;
+```
+
 - *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFileConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -348,17 +444,29 @@ const dataLocalFileConfig: DataLocalFileConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFileConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFileConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFileConfig.property.filename"></a>
+
+```typescript
+public readonly filename: string;
+```
 
 - *Type:* `string`
 
@@ -380,11 +488,19 @@ const fileConfig: FileConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.count"></a>
 
+```typescript
+public readonly count: number | IResolvable;
+```
+
 - *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -392,17 +508,29 @@ const fileConfig: FileConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.FileConfig.property.filename"></a>
+
+```typescript
+public readonly filename: string;
+```
 
 - *Type:* `string`
 
@@ -414,6 +542,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local
 
 ##### `content`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.content"></a>
 
+```typescript
+public readonly content: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#content File#content}.
@@ -422,6 +554,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local
 
 ##### `contentBase64`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.contentBase64"></a>
 
+```typescript
+public readonly contentBase64: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#content_base64 File#content_base64}.
@@ -429,6 +565,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local
 ---
 
 ##### `directoryPermission`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.directoryPermission"></a>
+
+```typescript
+public readonly directoryPermission: string;
+```
 
 - *Type:* `string`
 
@@ -440,6 +580,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local
 
 ##### `filePermission`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.filePermission"></a>
 
+```typescript
+public readonly filePermission: string;
+```
+
 - *Type:* `string`
 
 Permissions to set for the output file.
@@ -450,6 +594,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local
 
 ##### `sensitiveContent`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.sensitiveContent"></a>
 
+```typescript
+public readonly sensitiveContent: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#sensitive_content File#sensitive_content}.
@@ -457,6 +605,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local
 ---
 
 ##### `source`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
 
 - *Type:* `string`
 
@@ -477,6 +629,10 @@ const localProviderConfig: LocalProviderConfig = { ... }
 ```
 
 ##### `alias`<sup>Optional</sup> <a name="@cdktf/provider-local.LocalProviderConfig.property.alias"></a>
+
+```typescript
+public readonly alias: string;
+```
 
 - *Type:* `string`
 
