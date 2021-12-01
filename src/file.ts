@@ -91,11 +91,11 @@ export class File extends cdktf.TerraformResource {
   // ==========
 
   // content - computed: false, optional: true, required: false
-  private _content?: string | undefined; 
+  private _content?: string; 
   public get content() {
     return this.getStringAttribute('content');
   }
-  public set content(value: string | undefined) {
+  public set content(value: string) {
     this._content = value;
   }
   public resetContent() {
@@ -103,15 +103,15 @@ export class File extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get contentInput() {
-    return this._content
+    return this._content;
   }
 
   // content_base64 - computed: false, optional: true, required: false
-  private _contentBase64?: string | undefined; 
+  private _contentBase64?: string; 
   public get contentBase64() {
     return this.getStringAttribute('content_base64');
   }
-  public set contentBase64(value: string | undefined) {
+  public set contentBase64(value: string) {
     this._contentBase64 = value;
   }
   public resetContentBase64() {
@@ -119,15 +119,15 @@ export class File extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get contentBase64Input() {
-    return this._contentBase64
+    return this._contentBase64;
   }
 
   // directory_permission - computed: false, optional: true, required: false
-  private _directoryPermission?: string | undefined; 
+  private _directoryPermission?: string; 
   public get directoryPermission() {
     return this.getStringAttribute('directory_permission');
   }
-  public set directoryPermission(value: string | undefined) {
+  public set directoryPermission(value: string) {
     this._directoryPermission = value;
   }
   public resetDirectoryPermission() {
@@ -135,15 +135,15 @@ export class File extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get directoryPermissionInput() {
-    return this._directoryPermission
+    return this._directoryPermission;
   }
 
   // file_permission - computed: false, optional: true, required: false
-  private _filePermission?: string | undefined; 
+  private _filePermission?: string; 
   public get filePermission() {
     return this.getStringAttribute('file_permission');
   }
-  public set filePermission(value: string | undefined) {
+  public set filePermission(value: string) {
     this._filePermission = value;
   }
   public resetFilePermission() {
@@ -151,7 +151,7 @@ export class File extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get filePermissionInput() {
-    return this._filePermission
+    return this._filePermission;
   }
 
   // filename - computed: false, optional: false, required: true
@@ -164,7 +164,7 @@ export class File extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get filenameInput() {
-    return this._filename
+    return this._filename;
   }
 
   // id - computed: true, optional: true, required: false
@@ -173,11 +173,11 @@ export class File extends cdktf.TerraformResource {
   }
 
   // sensitive_content - computed: false, optional: true, required: false
-  private _sensitiveContent?: string | undefined; 
+  private _sensitiveContent?: string; 
   public get sensitiveContent() {
     return this.getStringAttribute('sensitive_content');
   }
-  public set sensitiveContent(value: string | undefined) {
+  public set sensitiveContent(value: string) {
     this._sensitiveContent = value;
   }
   public resetSensitiveContent() {
@@ -185,15 +185,15 @@ export class File extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sensitiveContentInput() {
-    return this._sensitiveContent
+    return this._sensitiveContent;
   }
 
   // source - computed: false, optional: true, required: false
-  private _source?: string | undefined; 
+  private _source?: string; 
   public get source() {
     return this.getStringAttribute('source');
   }
-  public set source(value: string | undefined) {
+  public set source(value: string) {
     this._source = value;
   }
   public resetSource() {
@@ -201,7 +201,7 @@ export class File extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sourceInput() {
-    return this._source
+    return this._source;
   }
 
   // =========
