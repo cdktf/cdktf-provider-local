@@ -257,6 +257,36 @@ public readonly sourceInput: string;
 
 ---
 
+##### `content`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.content"></a>
+
+```typescript
+public readonly content: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `contentBase64`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.contentBase64"></a>
+
+```typescript
+public readonly contentBase64: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `directoryPermission`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.directoryPermission"></a>
+
+```typescript
+public readonly directoryPermission: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.filename"></a>
 
 ```typescript
@@ -267,37 +297,7 @@ public readonly filename: string;
 
 ---
 
-##### `content`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.content"></a>
-
-```typescript
-public readonly content: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `contentBase64`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.contentBase64"></a>
-
-```typescript
-public readonly contentBase64: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `directoryPermission`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.directoryPermission"></a>
-
-```typescript
-public readonly directoryPermission: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `filePermission`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.filePermission"></a>
+##### `filePermission`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.filePermission"></a>
 
 ```typescript
 public readonly filePermission: string;
@@ -307,7 +307,7 @@ public readonly filePermission: string;
 
 ---
 
-##### `sensitiveContent`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.sensitiveContent"></a>
+##### `sensitiveContent`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.sensitiveContent"></a>
 
 ```typescript
 public readonly sensitiveContent: string;
@@ -317,7 +317,7 @@ public readonly sensitiveContent: string;
 
 ---
 
-##### `source`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.source"></a>
+##### `source`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.source"></a>
 
 ```typescript
 public readonly source: string;

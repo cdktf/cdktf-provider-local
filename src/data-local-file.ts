@@ -74,7 +74,7 @@ export class DataLocalFile extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get filenameInput() {
-    return this._filename
+    return this._filename;
   }
 
   // id - computed: true, optional: true, required: false
