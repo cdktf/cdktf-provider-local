@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/local/r/file.html
+// https://www.terraform.io/docs/providers/local/r/file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,45 +8,45 @@ import * as cdktf from 'cdktf';
 
 export interface FileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#content File#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content File#content}
   */
   readonly content?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#content_base64 File#content_base64}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content_base64 File#content_base64}
   */
   readonly contentBase64?: string;
   /**
   * Permissions to set for directories created
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#directory_permission File#directory_permission}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#directory_permission File#directory_permission}
   */
   readonly directoryPermission?: string;
   /**
   * Permissions to set for the output file
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#file_permission File#file_permission}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#file_permission File#file_permission}
   */
   readonly filePermission?: string;
   /**
   * Path to the output file
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#filename File#filename}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#filename File#filename}
   */
   readonly filename: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#sensitive_content File#sensitive_content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#sensitive_content File#sensitive_content}
   */
   readonly sensitiveContent?: string;
   /**
   * Path to file to use as source for content of output file
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#source File#source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#source File#source}
   */
   readonly source?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/local/r/file.html local_file}
+* Represents a {@link https://www.terraform.io/docs/providers/local/r/file local_file}
 */
 export class File extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class File extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/local/r/file.html local_file} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/local/r/file local_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

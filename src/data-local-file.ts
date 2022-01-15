@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/local/d/file.html
+// https://www.terraform.io/docs/providers/local/d/file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataLocalFileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path to the output file
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/file.html#filename DataLocalFile#filename}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/file#filename DataLocalFile#filename}
   */
   readonly filename: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/local/d/file.html local_file}
+* Represents a {@link https://www.terraform.io/docs/providers/local/d/file local_file}
 */
 export class DataLocalFile extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataLocalFile extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/local/d/file.html local_file} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/local/d/file local_file} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
