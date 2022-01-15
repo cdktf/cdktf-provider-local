@@ -4,7 +4,7 @@
 
 ### DataLocalFile <a name="@cdktf/provider-local.DataLocalFile"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/local/d/file.html local_file}.
+Represents a {@link https://www.terraform.io/docs/providers/local/d/file local_file}.
 
 #### Initializers <a name="@cdktf/provider-local.DataLocalFile.Initializer"></a>
 
@@ -102,7 +102,7 @@ public readonly filename: string;
 
 ### File <a name="@cdktf/provider-local.File"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/local/r/file.html local_file}.
+Represents a {@link https://www.terraform.io/docs/providers/local/r/file local_file}.
 
 #### Initializers <a name="@cdktf/provider-local.File.Initializer"></a>
 
@@ -472,7 +472,7 @@ public readonly filename: string;
 
 Path to the output file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/file.html#filename DataLocalFile#filename}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/file#filename DataLocalFile#filename}
 
 ---
 
@@ -536,7 +536,7 @@ public readonly filename: string;
 
 Path to the output file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#filename File#filename}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#filename File#filename}
 
 ---
 
@@ -548,7 +548,7 @@ public readonly content: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#content File#content}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content File#content}.
 
 ---
 
@@ -560,7 +560,7 @@ public readonly contentBase64: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#content_base64 File#content_base64}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content_base64 File#content_base64}.
 
 ---
 
@@ -574,7 +574,7 @@ public readonly directoryPermission: string;
 
 Permissions to set for directories created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#directory_permission File#directory_permission}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#directory_permission File#directory_permission}
 
 ---
 
@@ -588,7 +588,7 @@ public readonly filePermission: string;
 
 Permissions to set for the output file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#file_permission File#file_permission}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#file_permission File#file_permission}
 
 ---
 
@@ -600,7 +600,7 @@ public readonly sensitiveContent: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#sensitive_content File#sensitive_content}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#sensitive_content File#sensitive_content}.
 
 ---
 
@@ -614,7 +614,7 @@ public readonly source: string;
 
 Path to file to use as source for content of output file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file.html#source File#source}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#source File#source}
 
 ---
 
