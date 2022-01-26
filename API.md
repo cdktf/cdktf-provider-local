@@ -425,10 +425,10 @@ const dataLocalFileConfig: DataLocalFileConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFileConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -489,10 +489,10 @@ const fileConfig: FileConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
