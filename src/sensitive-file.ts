@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/local/r/file
+// https://www.terraform.io/docs/providers/local/r/sensitive_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,29 +6,29 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface FileConfig extends cdktf.TerraformMetaArguments {
+export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Content to store in the file, expected to be an UTF-8 encoded string.
+  * Sensitive content to store in the file, expected to be an UTF-8 encoded string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content File#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#content SensitiveFile#content}
   */
   readonly content?: string;
   /**
-  * Content to store in the file, expected to be binary encoded as base64 string.
+  * Sensitive content to store in the file, expected to be binary encoded as base64 string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content_base64 File#content_base64}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#content_base64 SensitiveFile#content_base64}
   */
   readonly contentBase64?: string;
   /**
   * Permissions to set for directories created (in numeric notation).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#directory_permission File#directory_permission}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#directory_permission SensitiveFile#directory_permission}
   */
   readonly directoryPermission?: string;
   /**
   * Permissions to set for the output file (in numeric notation).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#file_permission File#file_permission}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#file_permission SensitiveFile#file_permission}
   */
   readonly filePermission?: string;
   /**
@@ -38,47 +38,41 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
 					If the file already exists, it will be overridden with the given content.
 				
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#filename File#filename}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#filename SensitiveFile#filename}
   */
   readonly filename: string;
   /**
-  * Sensitive content to store in the file, expected to be an UTF-8 encoded string.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#sensitive_content File#sensitive_content}
-  */
-  readonly sensitiveContent?: string;
-  /**
   * Path to file to use as source for the one we are creating.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#source File#source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#source SensitiveFile#source}
   */
   readonly source?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/local/r/file local_file}
+* Represents a {@link https://www.terraform.io/docs/providers/local/r/sensitive_file local_sensitive_file}
 */
-export class File extends cdktf.TerraformResource {
+export class SensitiveFile extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "local_file";
+  public static readonly tfResourceType: string = "local_sensitive_file";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/local/r/file local_file} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/local/r/sensitive_file local_sensitive_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options FileConfig
+  * @param options SensitiveFileConfig
   */
-  public constructor(scope: Construct, id: string, config: FileConfig) {
+  public constructor(scope: Construct, id: string, config: SensitiveFileConfig) {
     super(scope, id, {
-      terraformResourceType: 'local_file',
+      terraformResourceType: 'local_sensitive_file',
       terraformGeneratorMetadata: {
         providerName: 'local'
       },
@@ -92,7 +86,6 @@ export class File extends cdktf.TerraformResource {
     this._directoryPermission = config.directoryPermission;
     this._filePermission = config.filePermission;
     this._filename = config.filename;
-    this._sensitiveContent = config.sensitiveContent;
     this._source = config.source;
   }
 
@@ -182,22 +175,6 @@ export class File extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // sensitive_content - computed: false, optional: true, required: false
-  private _sensitiveContent?: string; 
-  public get sensitiveContent() {
-    return this.getStringAttribute('sensitive_content');
-  }
-  public set sensitiveContent(value: string) {
-    this._sensitiveContent = value;
-  }
-  public resetSensitiveContent() {
-    this._sensitiveContent = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sensitiveContentInput() {
-    return this._sensitiveContent;
-  }
-
   // source - computed: false, optional: true, required: false
   private _source?: string; 
   public get source() {
@@ -225,7 +202,6 @@ export class File extends cdktf.TerraformResource {
       directory_permission: cdktf.stringToTerraform(this._directoryPermission),
       file_permission: cdktf.stringToTerraform(this._filePermission),
       filename: cdktf.stringToTerraform(this._filename),
-      sensitive_content: cdktf.stringToTerraform(this._sensitiveContent),
       source: cdktf.stringToTerraform(this._source),
     };
   }

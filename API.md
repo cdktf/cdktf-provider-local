@@ -100,6 +100,104 @@ public readonly filename: string;
 
 ---
 
+### DataLocalSensitiveFile <a name="@cdktf/provider-local.DataLocalSensitiveFile"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/local/d/sensitive_file local_sensitive_file}.
+
+#### Initializers <a name="@cdktf/provider-local.DataLocalSensitiveFile.Initializer"></a>
+
+```typescript
+import { DataLocalSensitiveFile } from '@cdktf/provider-local'
+
+new DataLocalSensitiveFile(scope: Construct, id: string, config: DataLocalSensitiveFileConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-local.DataLocalSensitiveFileConfig`](#@cdktf/provider-local.DataLocalSensitiveFileConfig)
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `content`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.content"></a>
+
+```typescript
+public readonly content: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `contentBase64`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.contentBase64"></a>
+
+```typescript
+public readonly contentBase64: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `filenameInput`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.filenameInput"></a>
+
+```typescript
+public readonly filenameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.filename"></a>
+
+```typescript
+public readonly filename: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### File <a name="@cdktf/provider-local.File"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/local/r/file local_file}.
@@ -410,6 +508,215 @@ public readonly alias: string;
 
 ---
 
+### SensitiveFile <a name="@cdktf/provider-local.SensitiveFile"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/local/r/sensitive_file local_sensitive_file}.
+
+#### Initializers <a name="@cdktf/provider-local.SensitiveFile.Initializer"></a>
+
+```typescript
+import { SensitiveFile } from '@cdktf/provider-local'
+
+new SensitiveFile(scope: Construct, id: string, config: SensitiveFileConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-local.SensitiveFileConfig`](#@cdktf/provider-local.SensitiveFileConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetContent` <a name="@cdktf/provider-local.SensitiveFile.resetContent"></a>
+
+```typescript
+public resetContent()
+```
+
+##### `resetContentBase64` <a name="@cdktf/provider-local.SensitiveFile.resetContentBase64"></a>
+
+```typescript
+public resetContentBase64()
+```
+
+##### `resetDirectoryPermission` <a name="@cdktf/provider-local.SensitiveFile.resetDirectoryPermission"></a>
+
+```typescript
+public resetDirectoryPermission()
+```
+
+##### `resetFilePermission` <a name="@cdktf/provider-local.SensitiveFile.resetFilePermission"></a>
+
+```typescript
+public resetFilePermission()
+```
+
+##### `resetSource` <a name="@cdktf/provider-local.SensitiveFile.resetSource"></a>
+
+```typescript
+public resetSource()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `contentBase64Input`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFile.property.contentBase64Input"></a>
+
+```typescript
+public readonly contentBase64Input: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `contentInput`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFile.property.contentInput"></a>
+
+```typescript
+public readonly contentInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `directoryPermissionInput`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFile.property.directoryPermissionInput"></a>
+
+```typescript
+public readonly directoryPermissionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `filenameInput`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFile.property.filenameInput"></a>
+
+```typescript
+public readonly filenameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `filePermissionInput`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFile.property.filePermissionInput"></a>
+
+```typescript
+public readonly filePermissionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFile.property.sourceInput"></a>
+
+```typescript
+public readonly sourceInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `content`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.property.content"></a>
+
+```typescript
+public readonly content: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `contentBase64`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.property.contentBase64"></a>
+
+```typescript
+public readonly contentBase64: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `directoryPermission`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.property.directoryPermission"></a>
+
+```typescript
+public readonly directoryPermission: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.property.filename"></a>
+
+```typescript
+public readonly filename: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `filePermission`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.property.filePermission"></a>
+
+```typescript
+public readonly filePermission: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `source`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-local.SensitiveFile.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ## Structs <a name="Structs"></a>
 
 ### DataLocalFileConfig <a name="@cdktf/provider-local.DataLocalFileConfig"></a>
@@ -470,9 +777,77 @@ public readonly filename: string;
 
 - *Type:* `string`
 
-Path to the output file.
+Path to the file that will be read.
+
+The data source will return an error if the file does not exist.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/file#filename DataLocalFile#filename}
+
+---
+
+### DataLocalSensitiveFileConfig <a name="@cdktf/provider-local.DataLocalSensitiveFileConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataLocalSensitiveFileConfig } from '@cdktf/provider-local'
+
+const dataLocalSensitiveFileConfig: DataLocalSensitiveFileConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFileConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFileConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFileConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFileConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFileConfig.property.filename"></a>
+
+```typescript
+public readonly filename: string;
+```
+
+- *Type:* `string`
+
+Path to the file that will be read.
+
+The data source will return an error if the file does not exist.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/sensitive_file#filename DataLocalSensitiveFile#filename}
 
 ---
 
@@ -534,7 +909,11 @@ public readonly filename: string;
 
 - *Type:* `string`
 
-Path to the output file.
+The path to the file that will be created.
+
+Missing parent directories will be created.
+If the file already exists, it will be overridden with the given content.
+
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#filename File#filename}
 
@@ -548,7 +927,9 @@ public readonly content: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content File#content}.
+Content to store in the file, expected to be an UTF-8 encoded string.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content File#content}
 
 ---
 
@@ -560,7 +941,9 @@ public readonly contentBase64: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content_base64 File#content_base64}.
+Content to store in the file, expected to be binary encoded as base64 string.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content_base64 File#content_base64}
 
 ---
 
@@ -572,7 +955,7 @@ public readonly directoryPermission: string;
 
 - *Type:* `string`
 
-Permissions to set for directories created.
+Permissions to set for directories created (in numeric notation).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#directory_permission File#directory_permission}
 
@@ -586,7 +969,7 @@ public readonly filePermission: string;
 
 - *Type:* `string`
 
-Permissions to set for the output file.
+Permissions to set for the output file (in numeric notation).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#file_permission File#file_permission}
 
@@ -600,7 +983,9 @@ public readonly sensitiveContent: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#sensitive_content File#sensitive_content}.
+Sensitive content to store in the file, expected to be an UTF-8 encoded string.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#sensitive_content File#sensitive_content}
 
 ---
 
@@ -612,7 +997,7 @@ public readonly source: string;
 
 - *Type:* `string`
 
-Path to file to use as source for content of output file.
+Path to file to use as source for the one we are creating.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#source File#source}
 
@@ -639,6 +1024,144 @@ public readonly alias: string;
 Alias name.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local#alias LocalProvider#alias}
+
+---
+
+### SensitiveFileConfig <a name="@cdktf/provider-local.SensitiveFileConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { SensitiveFileConfig } from '@cdktf/provider-local'
+
+const sensitiveFileConfig: SensitiveFileConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.filename"></a>
+
+```typescript
+public readonly filename: string;
+```
+
+- *Type:* `string`
+
+The path to the file that will be created.
+
+Missing parent directories will be created.
+If the file already exists, it will be overridden with the given content.
+
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#filename SensitiveFile#filename}
+
+---
+
+##### `content`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.content"></a>
+
+```typescript
+public readonly content: string;
+```
+
+- *Type:* `string`
+
+Sensitive content to store in the file, expected to be an UTF-8 encoded string.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#content SensitiveFile#content}
+
+---
+
+##### `contentBase64`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.contentBase64"></a>
+
+```typescript
+public readonly contentBase64: string;
+```
+
+- *Type:* `string`
+
+Sensitive content to store in the file, expected to be binary encoded as base64 string.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#content_base64 SensitiveFile#content_base64}
+
+---
+
+##### `directoryPermission`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.directoryPermission"></a>
+
+```typescript
+public readonly directoryPermission: string;
+```
+
+- *Type:* `string`
+
+Permissions to set for directories created (in numeric notation).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#directory_permission SensitiveFile#directory_permission}
+
+---
+
+##### `filePermission`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.filePermission"></a>
+
+```typescript
+public readonly filePermission: string;
+```
+
+- *Type:* `string`
+
+Permissions to set for the output file (in numeric notation).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#file_permission SensitiveFile#file_permission}
+
+---
+
+##### `source`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* `string`
+
+Path to file to use as source for the one we are creating.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#source SensitiveFile#source}
 
 ---
 
