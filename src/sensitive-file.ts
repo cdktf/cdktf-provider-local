@@ -57,7 +57,7 @@ export class SensitiveFile extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "local_sensitive_file";
+  public static readonly tfResourceType = "local_sensitive_file";
 
   // ===========
   // INITIALIZER
@@ -74,7 +74,9 @@ export class SensitiveFile extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'local_sensitive_file',
       terraformGeneratorMetadata: {
-        providerName: 'local'
+        providerName: 'local',
+        providerVersion: '2.2.2',
+        providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
