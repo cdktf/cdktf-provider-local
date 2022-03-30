@@ -23,7 +23,7 @@ export class LocalProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "local";
+  public static readonly tfResourceType = "local";
 
   // ===========
   // INITIALIZER
@@ -41,6 +41,7 @@ export class LocalProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'local',
       terraformGeneratorMetadata: {
         providerName: 'local',
+        providerVersion: '2.2.2',
         providerVersionConstraint: '~> 2.1'
       },
       terraformProviderSource: 'hashicorp/local'

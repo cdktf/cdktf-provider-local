@@ -63,7 +63,7 @@ export class File extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "local_file";
+  public static readonly tfResourceType = "local_file";
 
   // ===========
   // INITIALIZER
@@ -80,7 +80,9 @@ export class File extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'local_file',
       terraformGeneratorMetadata: {
-        providerName: 'local'
+        providerName: 'local',
+        providerVersion: '2.2.2',
+        providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
