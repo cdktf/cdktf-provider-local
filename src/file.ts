@@ -81,7 +81,7 @@ export class File extends cdktf.TerraformResource {
       terraformResourceType: 'local_file',
       terraformGeneratorMetadata: {
         providerName: 'local',
-        providerVersion: '2.2.2',
+        providerVersion: '2.2.3',
         providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
