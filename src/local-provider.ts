@@ -41,7 +41,7 @@ export class LocalProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'local',
       terraformGeneratorMetadata: {
         providerName: 'local',
-        providerVersion: '2.2.2',
+        providerVersion: '2.2.3',
         providerVersionConstraint: '~> 2.1'
       },
       terraformProviderSource: 'hashicorp/local'
