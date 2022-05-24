@@ -38,6 +38,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Methods <a name="Methods"></a>
+
+##### `resetId` <a name="@cdktf/provider-local.DataLocalFile.resetId"></a>
+
+```typescript
+public resetId()
+```
 
 
 #### Properties <a name="Properties"></a>
@@ -62,16 +69,6 @@ public readonly contentBase64: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `filenameInput`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFile.property.filenameInput"></a>
 
 ```typescript
@@ -82,10 +79,30 @@ public readonly filenameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFile.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalFile.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -136,6 +153,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Methods <a name="Methods"></a>
+
+##### `resetId` <a name="@cdktf/provider-local.DataLocalSensitiveFile.resetId"></a>
+
+```typescript
+public resetId()
+```
 
 
 #### Properties <a name="Properties"></a>
@@ -160,16 +184,6 @@ public readonly contentBase64: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `filenameInput`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.filenameInput"></a>
 
 ```typescript
@@ -180,10 +194,30 @@ public readonly filenameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `filename`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFile.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -260,6 +294,12 @@ public resetDirectoryPermission()
 public resetFilePermission()
 ```
 
+##### `resetId` <a name="@cdktf/provider-local.File.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetSensitiveContent` <a name="@cdktf/provider-local.File.resetSensitiveContent"></a>
 
 ```typescript
@@ -274,16 +314,6 @@ public resetSource()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `contentBase64Input`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.contentBase64Input"></a>
 
@@ -329,6 +359,16 @@ public readonly filenameInput: string;
 
 ```typescript
 public readonly filePermissionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-local.File.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
 ```
 
 - *Type:* `string`
@@ -399,6 +439,16 @@ public readonly filename: string;
 
 ```typescript
 public readonly filePermission: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.File.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -570,6 +620,12 @@ public resetDirectoryPermission()
 public resetFilePermission()
 ```
 
+##### `resetId` <a name="@cdktf/provider-local.SensitiveFile.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetSource` <a name="@cdktf/provider-local.SensitiveFile.resetSource"></a>
 
 ```typescript
@@ -578,16 +634,6 @@ public resetSource()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `contentBase64Input`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFile.property.contentBase64Input"></a>
 
@@ -633,6 +679,16 @@ public readonly filenameInput: string;
 
 ```typescript
 public readonly filePermissionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFile.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
 ```
 
 - *Type:* `string`
@@ -693,6 +749,16 @@ public readonly filename: string;
 
 ```typescript
 public readonly filePermission: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-local.SensitiveFile.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -785,6 +851,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalFileConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/file#id DataLocalFile#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ### DataLocalSensitiveFileConfig <a name="@cdktf/provider-local.DataLocalSensitiveFileConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -848,6 +929,21 @@ Path to the file that will be read.
 The data source will return an error if the file does not exist.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/sensitive_file#filename DataLocalSensitiveFile#filename}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-local.DataLocalSensitiveFileConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/sensitive_file#id DataLocalSensitiveFile#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -972,6 +1068,21 @@ public readonly filePermission: string;
 Permissions to set for the output file (in numeric notation).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#file_permission File#file_permission}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-local.FileConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#id File#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -1148,6 +1259,21 @@ public readonly filePermission: string;
 Permissions to set for the output file (in numeric notation).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#file_permission SensitiveFile#file_permission}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-local.SensitiveFileConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#id SensitiveFile#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
