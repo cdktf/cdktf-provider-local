@@ -42,6 +42,13 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   */
   readonly filename: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#id File#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Sensitive content to store in the file, expected to be an UTF-8 encoded string.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#sensitive_content File#sensitive_content}
@@ -94,6 +101,7 @@ export class File extends cdktf.TerraformResource {
     this._directoryPermission = config.directoryPermission;
     this._filePermission = config.filePermission;
     this._filename = config.filename;
+    this._id = config.id;
     this._sensitiveContent = config.sensitiveContent;
     this._source = config.source;
   }
@@ -180,8 +188,19 @@ export class File extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // sensitive_content - computed: false, optional: true, required: false
@@ -227,6 +246,7 @@ export class File extends cdktf.TerraformResource {
       directory_permission: cdktf.stringToTerraform(this._directoryPermission),
       file_permission: cdktf.stringToTerraform(this._filePermission),
       filename: cdktf.stringToTerraform(this._filename),
+      id: cdktf.stringToTerraform(this._id),
       sensitive_content: cdktf.stringToTerraform(this._sensitiveContent),
       source: cdktf.stringToTerraform(this._source),
     };
