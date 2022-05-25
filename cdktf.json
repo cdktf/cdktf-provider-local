@@ -1,6 +1,7 @@
 {
   "language": "typescript",
   "app": "echo noop",
+  "sendCrashReports": false,
   "terraformProviders": [
     "hashicorp/local@~> 2.1"
   ],
