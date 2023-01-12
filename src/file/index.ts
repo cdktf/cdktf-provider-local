@@ -8,54 +8,60 @@ import * as cdktf from 'cdktf';
 
 export interface FileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Content to store in the file, expected to be an UTF-8 encoded string.
+  * Content to store in the file, expected to be a UTF-8 encoded string.
+ Conflicts with `sensitive_content`, `content_base64` and `source`.
+ Exactly one of these four arguments must be specified.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content File#content}
   */
   readonly content?: string;
   /**
   * Content to store in the file, expected to be binary encoded as base64 string.
+ Conflicts with `content`, `sensitive_content` and `source`.
+ Exactly one of these four arguments must be specified.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content_base64 File#content_base64}
   */
   readonly contentBase64?: string;
   /**
-  * Permissions to set for directories created (in numeric notation).
+  * Permissions to set for directories created (before umask), expressed as string in
+ [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
+ Default value is `"0777"`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#directory_permission File#directory_permission}
   */
   readonly directoryPermission?: string;
   /**
-  * Permissions to set for the output file (in numeric notation).
+  * Permissions to set for the output file (before umask), expressed as string in
+ [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
+ Default value is `"0777"`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#file_permission File#file_permission}
   */
   readonly filePermission?: string;
   /**
-  * 
-					The path to the file that will be created.
-					Missing parent directories will be created.
-					If the file already exists, it will be overridden with the given content.
-				
+  * The path to the file that will be created.
+ Missing parent directories will be created.
+ If the file already exists, it will be overridden with the given content.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#filename File#filename}
   */
   readonly filename: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#id File#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Sensitive content to store in the file, expected to be an UTF-8 encoded string.
+ Will not be displayed in diffs.
+ Conflicts with `content`, `content_base64` and `source`.
+ Exactly one of these four arguments must be specified.
+ If in need to use _sensitive_ content, please use the [`local_sensitive_file`](./sensitive_file.html)
+ resource instead.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#sensitive_content File#sensitive_content}
   */
   readonly sensitiveContent?: string;
   /**
   * Path to file to use as source for the one we are creating.
+ Conflicts with `content`, `sensitive_content` and `content_base64`.
+ Exactly one of these four arguments must be specified.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#source File#source}
   */
@@ -88,7 +94,7 @@ export class File extends cdktf.TerraformResource {
       terraformResourceType: 'local_file',
       terraformGeneratorMetadata: {
         providerName: 'local',
-        providerVersion: '2.2.3',
+        providerVersion: '2.3.0',
         providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
@@ -104,7 +110,6 @@ export class File extends cdktf.TerraformResource {
     this._directoryPermission = config.directoryPermission;
     this._filePermission = config.filePermission;
     this._filename = config.filename;
-    this._id = config.id;
     this._sensitiveContent = config.sensitiveContent;
     this._source = config.source;
   }
@@ -145,7 +150,7 @@ export class File extends cdktf.TerraformResource {
     return this._contentBase64;
   }
 
-  // directory_permission - computed: false, optional: true, required: false
+  // directory_permission - computed: true, optional: true, required: false
   private _directoryPermission?: string; 
   public get directoryPermission() {
     return this.getStringAttribute('directory_permission');
@@ -161,7 +166,7 @@ export class File extends cdktf.TerraformResource {
     return this._directoryPermission;
   }
 
-  // file_permission - computed: false, optional: true, required: false
+  // file_permission - computed: true, optional: true, required: false
   private _filePermission?: string; 
   public get filePermission() {
     return this.getStringAttribute('file_permission');
@@ -190,20 +195,9 @@ export class File extends cdktf.TerraformResource {
     return this._filename;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // sensitive_content - computed: false, optional: true, required: false
@@ -249,7 +243,6 @@ export class File extends cdktf.TerraformResource {
       directory_permission: cdktf.stringToTerraform(this._directoryPermission),
       file_permission: cdktf.stringToTerraform(this._filePermission),
       filename: cdktf.stringToTerraform(this._filename),
-      id: cdktf.stringToTerraform(this._id),
       sensitive_content: cdktf.stringToTerraform(this._sensitiveContent),
       source: cdktf.stringToTerraform(this._source),
     };
