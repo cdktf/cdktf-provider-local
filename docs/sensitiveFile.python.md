@@ -543,6 +543,12 @@ sensitiveFile.SensitiveFile.is_terraform_resource(
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha256">content_base64_sha256</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha512">content_base64_sha512</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentMd5">content_md5</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha1">content_sha1</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha256">content_sha256</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha512">content_sha512</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Input">content_base64_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentInput">content_input</a></code> | <code>str</code> | *No description.* |
@@ -698,6 +704,66 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 ```
 
 - *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `content_base64_sha256`<sup>Required</sup> <a name="content_base64_sha256" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha256"></a>
+
+```python
+content_base64_sha256: str
+```
+
+- *Type:* str
+
+---
+
+##### `content_base64_sha512`<sup>Required</sup> <a name="content_base64_sha512" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha512"></a>
+
+```python
+content_base64_sha512: str
+```
+
+- *Type:* str
+
+---
+
+##### `content_md5`<sup>Required</sup> <a name="content_md5" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentMd5"></a>
+
+```python
+content_md5: str
+```
+
+- *Type:* str
+
+---
+
+##### `content_sha1`<sup>Required</sup> <a name="content_sha1" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha1"></a>
+
+```python
+content_sha1: str
+```
+
+- *Type:* str
+
+---
+
+##### `content_sha256`<sup>Required</sup> <a name="content_sha256" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha256"></a>
+
+```python
+content_sha256: str
+```
+
+- *Type:* str
+
+---
+
+##### `content_sha512`<sup>Required</sup> <a name="content_sha512" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha512"></a>
+
+```python
+content_sha512: str
+```
+
+- *Type:* str
 
 ---
 

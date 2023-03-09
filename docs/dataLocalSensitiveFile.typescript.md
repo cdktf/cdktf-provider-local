@@ -341,6 +341,12 @@ dataLocalSensitiveFile.DataLocalSensitiveFile.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.content">content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64">contentBase64</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha256">contentBase64Sha256</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha512">contentBase64Sha512</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentMd5">contentMd5</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha1">contentSha1</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha256">contentSha256</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha512">contentSha512</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.filenameInput">filenameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.filename">filename</a></code> | <code>string</code> | *No description.* |
@@ -483,6 +489,66 @@ public readonly content: string;
 
 ```typescript
 public readonly contentBase64: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentBase64Sha256`<sup>Required</sup> <a name="contentBase64Sha256" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha256"></a>
+
+```typescript
+public readonly contentBase64Sha256: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentBase64Sha512`<sup>Required</sup> <a name="contentBase64Sha512" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha512"></a>
+
+```typescript
+public readonly contentBase64Sha512: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentMd5`<sup>Required</sup> <a name="contentMd5" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentMd5"></a>
+
+```typescript
+public readonly contentMd5: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentSha1`<sup>Required</sup> <a name="contentSha1" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha1"></a>
+
+```typescript
+public readonly contentSha1: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentSha256`<sup>Required</sup> <a name="contentSha256" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha256"></a>
+
+```typescript
+public readonly contentSha256: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentSha512`<sup>Required</sup> <a name="contentSha512" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha512"></a>
+
+```typescript
+public readonly contentSha512: string;
 ```
 
 - *Type:* string
