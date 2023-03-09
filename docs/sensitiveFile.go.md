@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/local/r/sensitive_fi
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 sensitivefile.NewSensitiveFile(scope Construct, id *string, config SensitiveFileConfig) SensitiveFile
 ```
@@ -301,7 +301,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 sensitivefile.SensitiveFile_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 sensitivefile.SensitiveFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ sensitivefile.SensitiveFile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 sensitivefile.SensitiveFile_IsTerraformResource(x interface{}) *bool
 ```
@@ -376,6 +376,12 @@ sensitivefile.SensitiveFile_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha256">ContentBase64Sha256</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha512">ContentBase64Sha512</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentMd5">ContentMd5</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha1">ContentSha1</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha256">ContentSha256</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha512">ContentSha512</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Input">ContentBase64Input</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentInput">ContentInput</a></code> | <code>*string</code> | *No description.* |
@@ -534,6 +540,66 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `ContentBase64Sha256`<sup>Required</sup> <a name="ContentBase64Sha256" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha256"></a>
+
+```go
+func ContentBase64Sha256() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentBase64Sha512`<sup>Required</sup> <a name="ContentBase64Sha512" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha512"></a>
+
+```go
+func ContentBase64Sha512() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentMd5`<sup>Required</sup> <a name="ContentMd5" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentMd5"></a>
+
+```go
+func ContentMd5() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentSha1`<sup>Required</sup> <a name="ContentSha1" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha1"></a>
+
+```go
+func ContentSha1() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentSha256`<sup>Required</sup> <a name="ContentSha256" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha256"></a>
+
+```go
+func ContentSha256() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentSha512`<sup>Required</sup> <a name="ContentSha512" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha512"></a>
+
+```go
+func ContentSha512() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.id"></a>
 
 ```go
@@ -689,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 &sensitivefile.SensitiveFileConfig {
 	Connection: interface{},

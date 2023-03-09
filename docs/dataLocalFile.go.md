@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/local/d/file local_f
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalfile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalfile"
 
 datalocalfile.NewDataLocalFile(scope Construct, id *string, config DataLocalFileConfig) DataLocalFile
 ```
@@ -266,7 +266,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalfile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalfile"
 
 datalocalfile.DataLocalFile_IsConstruct(x interface{}) *bool
 ```
@@ -298,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalfile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalfile"
 
 datalocalfile.DataLocalFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ datalocalfile.DataLocalFile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalfile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalfile"
 
 datalocalfile.DataLocalFile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,6 +341,12 @@ datalocalfile.DataLocalFile_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.content">Content</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentBase64Sha256">ContentBase64Sha256</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentBase64Sha512">ContentBase64Sha512</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentMd5">ContentMd5</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentSha1">ContentSha1</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentSha256">ContentSha256</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentSha512">ContentSha512</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.filenameInput">FilenameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalFile.DataLocalFile.property.filename">Filename</a></code> | <code>*string</code> | *No description.* |
@@ -489,6 +495,66 @@ func ContentBase64() *string
 
 ---
 
+##### `ContentBase64Sha256`<sup>Required</sup> <a name="ContentBase64Sha256" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentBase64Sha256"></a>
+
+```go
+func ContentBase64Sha256() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentBase64Sha512`<sup>Required</sup> <a name="ContentBase64Sha512" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentBase64Sha512"></a>
+
+```go
+func ContentBase64Sha512() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentMd5`<sup>Required</sup> <a name="ContentMd5" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentMd5"></a>
+
+```go
+func ContentMd5() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentSha1`<sup>Required</sup> <a name="ContentSha1" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentSha1"></a>
+
+```go
+func ContentSha1() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentSha256`<sup>Required</sup> <a name="ContentSha256" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentSha256"></a>
+
+```go
+func ContentSha256() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentSha512`<sup>Required</sup> <a name="ContentSha512" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.property.contentSha512"></a>
+
+```go
+func ContentSha512() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.property.id"></a>
 
 ```go
@@ -544,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.dataLocalFile.DataLocalFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalfile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalfile"
 
 &datalocalfile.DataLocalFileConfig {
 	Connection: interface{},

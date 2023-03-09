@@ -408,6 +408,12 @@ DataLocalSensitiveFile.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.content">content</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64">contentBase64</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha256">contentBase64Sha256</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha512">contentBase64Sha512</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentMd5">contentMd5</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha1">contentSha1</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha256">contentSha256</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha512">contentSha512</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.filenameInput">filenameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.filename">filename</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -550,6 +556,66 @@ public java.lang.String getContent();
 
 ```java
 public java.lang.String getContentBase64();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `contentBase64Sha256`<sup>Required</sup> <a name="contentBase64Sha256" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha256"></a>
+
+```java
+public java.lang.String getContentBase64Sha256();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `contentBase64Sha512`<sup>Required</sup> <a name="contentBase64Sha512" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha512"></a>
+
+```java
+public java.lang.String getContentBase64Sha512();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `contentMd5`<sup>Required</sup> <a name="contentMd5" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentMd5"></a>
+
+```java
+public java.lang.String getContentMd5();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `contentSha1`<sup>Required</sup> <a name="contentSha1" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha1"></a>
+
+```java
+public java.lang.String getContentSha1();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `contentSha256`<sup>Required</sup> <a name="contentSha256" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha256"></a>
+
+```java
+public java.lang.String getContentSha256();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `contentSha512`<sup>Required</sup> <a name="contentSha512" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha512"></a>
+
+```java
+public java.lang.String getContentSha512();
 ```
 
 - *Type:* java.lang.String

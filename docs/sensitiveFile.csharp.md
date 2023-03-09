@@ -376,6 +376,12 @@ SensitiveFile.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha256">ContentBase64Sha256</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha512">ContentBase64Sha512</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentMd5">ContentMd5</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha1">ContentSha1</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha256">ContentSha256</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha512">ContentSha512</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Input">ContentBase64Input</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentInput">ContentInput</a></code> | <code>string</code> | *No description.* |
@@ -531,6 +537,66 @@ public object[] Provisioners { get; }
 ```
 
 - *Type:* object[]
+
+---
+
+##### `ContentBase64Sha256`<sup>Required</sup> <a name="ContentBase64Sha256" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha256"></a>
+
+```csharp
+public string ContentBase64Sha256 { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ContentBase64Sha512`<sup>Required</sup> <a name="ContentBase64Sha512" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentBase64Sha512"></a>
+
+```csharp
+public string ContentBase64Sha512 { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ContentMd5`<sup>Required</sup> <a name="ContentMd5" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentMd5"></a>
+
+```csharp
+public string ContentMd5 { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ContentSha1`<sup>Required</sup> <a name="ContentSha1" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha1"></a>
+
+```csharp
+public string ContentSha1 { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ContentSha256`<sup>Required</sup> <a name="ContentSha256" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha256"></a>
+
+```csharp
+public string ContentSha256 { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ContentSha512`<sup>Required</sup> <a name="ContentSha512" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.contentSha512"></a>
+
+```csharp
+public string ContentSha512 { get; }
+```
+
+- *Type:* string
 
 ---
 

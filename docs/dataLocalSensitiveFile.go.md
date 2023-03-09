@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/local/d/sensitive_fi
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 datalocalsensitivefile.NewDataLocalSensitiveFile(scope Construct, id *string, config DataLocalSensitiveFileConfig) DataLocalSensitiveFile
 ```
@@ -266,7 +266,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_IsConstruct(x interface{}) *bool
 ```
@@ -298,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,6 +341,12 @@ datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformDataSource(x interface{
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.content">Content</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha256">ContentBase64Sha256</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha512">ContentBase64Sha512</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentMd5">ContentMd5</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha1">ContentSha1</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha256">ContentSha256</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha512">ContentSha512</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.filenameInput">FilenameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.filename">Filename</a></code> | <code>*string</code> | *No description.* |
@@ -489,6 +495,66 @@ func ContentBase64() *string
 
 ---
 
+##### `ContentBase64Sha256`<sup>Required</sup> <a name="ContentBase64Sha256" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha256"></a>
+
+```go
+func ContentBase64Sha256() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentBase64Sha512`<sup>Required</sup> <a name="ContentBase64Sha512" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentBase64Sha512"></a>
+
+```go
+func ContentBase64Sha512() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentMd5`<sup>Required</sup> <a name="ContentMd5" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentMd5"></a>
+
+```go
+func ContentMd5() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentSha1`<sup>Required</sup> <a name="ContentSha1" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha1"></a>
+
+```go
+func ContentSha1() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentSha256`<sup>Required</sup> <a name="ContentSha256" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha256"></a>
+
+```go
+func ContentSha256() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentSha512`<sup>Required</sup> <a name="ContentSha512" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.contentSha512"></a>
+
+```go
+func ContentSha512() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.property.id"></a>
 
 ```go
@@ -544,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 &datalocalsensitivefile.DataLocalSensitiveFileConfig {
 	Connection: interface{},

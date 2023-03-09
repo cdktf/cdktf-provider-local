@@ -94,7 +94,7 @@ export class File extends cdktf.TerraformResource {
       terraformResourceType: 'local_file',
       terraformGeneratorMetadata: {
         providerName: 'local',
-        providerVersion: '2.3.0',
+        providerVersion: '2.4.0',
         providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
@@ -148,6 +148,36 @@ export class File extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get contentBase64Input() {
     return this._contentBase64;
+  }
+
+  // content_base64sha256 - computed: true, optional: false, required: false
+  public get contentBase64Sha256() {
+    return this.getStringAttribute('content_base64sha256');
+  }
+
+  // content_base64sha512 - computed: true, optional: false, required: false
+  public get contentBase64Sha512() {
+    return this.getStringAttribute('content_base64sha512');
+  }
+
+  // content_md5 - computed: true, optional: false, required: false
+  public get contentMd5() {
+    return this.getStringAttribute('content_md5');
+  }
+
+  // content_sha1 - computed: true, optional: false, required: false
+  public get contentSha1() {
+    return this.getStringAttribute('content_sha1');
+  }
+
+  // content_sha256 - computed: true, optional: false, required: false
+  public get contentSha256() {
+    return this.getStringAttribute('content_sha256');
+  }
+
+  // content_sha512 - computed: true, optional: false, required: false
+  public get contentSha512() {
+    return this.getStringAttribute('content_sha512');
   }
 
   // directory_permission - computed: true, optional: true, required: false

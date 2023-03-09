@@ -383,6 +383,12 @@ file.File.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-local.file.File.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.file.File.property.contentBase64Sha256">contentBase64Sha256</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.file.File.property.contentBase64Sha512">contentBase64Sha512</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.file.File.property.contentMd5">contentMd5</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.file.File.property.contentSha1">contentSha1</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.file.File.property.contentSha256">contentSha256</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.file.File.property.contentSha512">contentSha512</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.contentBase64Input">contentBase64Input</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
@@ -540,6 +546,66 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 ```
 
 - *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `contentBase64Sha256`<sup>Required</sup> <a name="contentBase64Sha256" id="@cdktf/provider-local.file.File.property.contentBase64Sha256"></a>
+
+```typescript
+public readonly contentBase64Sha256: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentBase64Sha512`<sup>Required</sup> <a name="contentBase64Sha512" id="@cdktf/provider-local.file.File.property.contentBase64Sha512"></a>
+
+```typescript
+public readonly contentBase64Sha512: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentMd5`<sup>Required</sup> <a name="contentMd5" id="@cdktf/provider-local.file.File.property.contentMd5"></a>
+
+```typescript
+public readonly contentMd5: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentSha1`<sup>Required</sup> <a name="contentSha1" id="@cdktf/provider-local.file.File.property.contentSha1"></a>
+
+```typescript
+public readonly contentSha1: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentSha256`<sup>Required</sup> <a name="contentSha256" id="@cdktf/provider-local.file.File.property.contentSha256"></a>
+
+```typescript
+public readonly contentSha256: string;
+```
+
+- *Type:* string
+
+---
+
+##### `contentSha512`<sup>Required</sup> <a name="contentSha512" id="@cdktf/provider-local.file.File.property.contentSha512"></a>
+
+```typescript
+public readonly contentSha512: string;
+```
+
+- *Type:* string
 
 ---
 
