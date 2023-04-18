@@ -1,6 +1,6 @@
 # `local_file`
 
-Refer to the Terraform Registory for docs: [`local_file`](https://www.terraform.io/docs/providers/local/r/file).
+Refer to the Terraform Registory for docs: [`local_file`](https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file).
 
 # `file` Submodule <a name="`file` Submodule" id="@cdktf/provider-local.file"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`local_file`](https://www.terraform.
 
 ### File <a name="File" id="@cdktf/provider-local.file.File"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/local/r/file local_file}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file local_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.file.File.Initializer"></a>
 
@@ -381,7 +381,7 @@ file.File_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-local.file.File.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-local.file.File.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.file.File.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.File.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -496,10 +496,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-local.file.File.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -792,7 +792,7 @@ import "github.com/cdktf/cdktf-provider-local-go/local/v6/file"
 
 &file.FileConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -813,7 +813,7 @@ import "github.com/cdktf/cdktf-provider-local-go/local/v6/file"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-local.file.FileConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.file.FileConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -842,10 +842,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-local.file.FileConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -912,7 +912,7 @@ The path to the file that will be created.
 Missing parent directories will be created.
 If the file already exists, it will be overridden with the given content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#filename File#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#filename File#filename}
 
 ---
 
@@ -929,7 +929,7 @@ Content to store in the file, expected to be a UTF-8 encoded string.
 Conflicts with `sensitive_content`, `content_base64` and `source`.
 Exactly one of these four arguments must be specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content File#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content File#content}
 
 ---
 
@@ -946,7 +946,7 @@ Content to store in the file, expected to be binary encoded as base64 string.
 Conflicts with `content`, `sensitive_content` and `source`.
 Exactly one of these four arguments must be specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#content_base64 File#content_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content_base64 File#content_base64}
 
 ---
 
@@ -960,7 +960,7 @@ DirectoryPermission *string
 
 Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#directory_permission File#directory_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#directory_permission File#directory_permission}
 
 ---
 
@@ -974,7 +974,7 @@ FilePermission *string
 
 Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#file_permission File#file_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#file_permission File#file_permission}
 
 ---
 
@@ -994,7 +994,7 @@ Exactly one of these four arguments must be specified.
 If in need to use *sensitive* content, please use the [`local_sensitive_file`](./sensitive_file.html)
 resource instead.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#sensitive_content File#sensitive_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#sensitive_content File#sensitive_content}
 
 ---
 
@@ -1011,7 +1011,7 @@ Path to file to use as source for the one we are creating.
 Conflicts with `content`, `sensitive_content` and `content_base64`.
 Exactly one of these four arguments must be specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/file#source File#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#source File#source}
 
 ---
 

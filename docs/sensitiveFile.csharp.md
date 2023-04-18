@@ -1,6 +1,6 @@
 # `local_sensitive_file`
 
-Refer to the Terraform Registory for docs: [`local_sensitive_file`](https://www.terraform.io/docs/providers/local/r/sensitive_file).
+Refer to the Terraform Registory for docs: [`local_sensitive_file`](https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file).
 
 # `sensitiveFile` Submodule <a name="`sensitiveFile` Submodule" id="@cdktf/provider-local.sensitiveFile"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`local_sensitive_file`](https://www.
 
 ### SensitiveFile <a name="SensitiveFile" id="@cdktf/provider-local.sensitiveFile.SensitiveFile"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/local/r/sensitive_file local_sensitive_file}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file local_sensitive_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.Initializer"></a>
 
@@ -374,7 +374,7 @@ SensitiveFile.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFile.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -487,10 +487,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -763,7 +763,7 @@ using HashiCorp.Cdktf.Providers.Local;
 
 new SensitiveFileConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -783,7 +783,7 @@ new SensitiveFileConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -811,10 +811,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -881,7 +881,7 @@ The path to the file that will be created.
 Missing parent directories will be created.
 If the file already exists, it will be overridden with the given content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#filename SensitiveFile#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#filename SensitiveFile#filename}
 
 ---
 
@@ -898,7 +898,7 @@ Sensitive Content to store in the file, expected to be a UTF-8 encoded string.
 Conflicts with `content_base64` and `source`.
 Exactly one of these three arguments must be specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#content SensitiveFile#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#content SensitiveFile#content}
 
 ---
 
@@ -915,7 +915,7 @@ Sensitive Content to store in the file, expected to be binary encoded as base64 
 Conflicts with `content` and `source`.
 Exactly one of these three arguments must be specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#content_base64 SensitiveFile#content_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#content_base64 SensitiveFile#content_base64}
 
 ---
 
@@ -929,7 +929,7 @@ public string DirectoryPermission { get; set; }
 
 Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0700"`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#directory_permission SensitiveFile#directory_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#directory_permission SensitiveFile#directory_permission}
 
 ---
 
@@ -943,7 +943,7 @@ public string FilePermission { get; set; }
 
 Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0700"`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#file_permission SensitiveFile#file_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#file_permission SensitiveFile#file_permission}
 
 ---
 
@@ -960,7 +960,7 @@ Path to file to use as source for the one we are creating.
 Conflicts with `content` and `content_base64`.
 Exactly one of these three arguments must be specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/r/sensitive_file#source SensitiveFile#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#source SensitiveFile#source}
 
 ---
 
