@@ -1,3 +1,7 @@
+# `data_local_file`
+
+Refer to the Terraform Registory for docs: [`data_local_file`](https://www.terraform.io/docs/providers/local/d/file).
+
 # `dataLocalFile` Submodule <a name="`dataLocalFile` Submodule" id="@cdktf/provider-local.dataLocalFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
