@@ -1,3 +1,7 @@
+# `data_local_sensitive_file`
+
+Refer to the Terraform Registory for docs: [`data_local_sensitive_file`](https://www.terraform.io/docs/providers/local/d/sensitive_file).
+
 # `dataLocalSensitiveFile` Submodule <a name="`dataLocalSensitiveFile` Submodule" id="@cdktf/provider-local.dataLocalSensitiveFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

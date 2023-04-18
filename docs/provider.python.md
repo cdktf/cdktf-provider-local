@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`local`](https://www.terraform.io/docs/providers/local).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-local.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
