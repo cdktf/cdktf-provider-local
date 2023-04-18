@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`local`](https://www.terraform.io/docs/providers/local).
+Refer to the Terraform Registory for docs: [`local`](https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-local.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`local`](https://www.terraform.io/do
 
 ### LocalProvider <a name="LocalProvider" id="@cdktf/provider-local.provider.LocalProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/local local}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs local}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.provider.LocalProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v6/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 provider.NewLocalProvider(scope Construct, id *string, config LocalProviderConfig) LocalProvider
 ```
@@ -147,7 +147,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.provider.LocalProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v6/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 provider.LocalProvider_IsConstruct(x interface{}) *bool
 ```
@@ -179,7 +179,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.provider.LocalProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v6/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 provider.LocalProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -193,7 +193,7 @@ provider.LocalProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-local.provider.LocalProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v6/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 provider.LocalProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.provider.LocalProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v6/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 &provider.LocalProviderConfig {
 	Alias: *string,
@@ -373,7 +373,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local#alias LocalProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs#alias LocalProvider#alias}
 
 ---
 

@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`local`](https://www.terraform.io/docs/providers/local).
+Refer to the Terraform Registory for docs: [`local`](https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-local.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`local`](https://www.terraform.io/do
 
 ### LocalProvider <a name="LocalProvider" id="@cdktf/provider-local.provider.LocalProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/local local}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs local}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.provider.LocalProvider.Initializer"></a>
 
@@ -52,7 +52,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local#alias LocalProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs#alias LocalProvider#alias}
 
 ---
 
@@ -379,7 +379,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local#alias LocalProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs#alias LocalProvider#alias}
 
 ---
 

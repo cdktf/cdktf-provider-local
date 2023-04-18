@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/local
+// https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface LocalProviderConfig {
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local#alias LocalProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs#alias LocalProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/local local}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs local}
 */
 export class LocalProvider extends cdktf.TerraformProvider {
 
@@ -30,7 +30,7 @@ export class LocalProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/local local} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs local} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
