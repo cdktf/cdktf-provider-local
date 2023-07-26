@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file
 // generated from terraform resource schema
 
@@ -16,7 +11,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   * Content to store in the file, expected to be a UTF-8 encoded string.
  Conflicts with `sensitive_content`, `content_base64` and `source`.
  Exactly one of these four arguments must be specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content File#content}
   */
   readonly content?: string;
@@ -24,7 +19,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   * Content to store in the file, expected to be binary encoded as base64 string.
  Conflicts with `content`, `sensitive_content` and `source`.
  Exactly one of these four arguments must be specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content_base64 File#content_base64}
   */
   readonly contentBase64?: string;
@@ -32,7 +27,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   * Permissions to set for directories created (before umask), expressed as string in
  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
  Default value is `"0777"`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#directory_permission File#directory_permission}
   */
   readonly directoryPermission?: string;
@@ -40,7 +35,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   * Permissions to set for the output file (before umask), expressed as string in
  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
  Default value is `"0777"`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#file_permission File#file_permission}
   */
   readonly filePermission?: string;
@@ -48,7 +43,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   * The path to the file that will be created.
  Missing parent directories will be created.
  If the file already exists, it will be overridden with the given content.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#filename File#filename}
   */
   readonly filename: string;
@@ -59,7 +54,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
  Exactly one of these four arguments must be specified.
  If in need to use _sensitive_ content, please use the [`local_sensitive_file`](./sensitive_file.html)
  resource instead.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#sensitive_content File#sensitive_content}
   */
   readonly sensitiveContent?: string;
@@ -67,7 +62,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   * Path to file to use as source for the one we are creating.
  Conflicts with `content`, `sensitive_content` and `content_base64`.
  Exactly one of these four arguments must be specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#source File#source}
   */
   readonly source?: string;

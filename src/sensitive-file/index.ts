@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file
 // generated from terraform resource schema
 
@@ -16,7 +11,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   * Sensitive Content to store in the file, expected to be a UTF-8 encoded string.
  Conflicts with `content_base64` and `source`.
  Exactly one of these three arguments must be specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#content SensitiveFile#content}
   */
   readonly content?: string;
@@ -24,7 +19,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   * Sensitive Content to store in the file, expected to be binary encoded as base64 string.
  Conflicts with `content` and `source`.
  Exactly one of these three arguments must be specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#content_base64 SensitiveFile#content_base64}
   */
   readonly contentBase64?: string;
@@ -32,7 +27,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   * Permissions to set for directories created (before umask), expressed as string in
  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
  Default value is `"0700"`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#directory_permission SensitiveFile#directory_permission}
   */
   readonly directoryPermission?: string;
@@ -40,7 +35,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   * Permissions to set for the output file (before umask), expressed as string in
  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
  Default value is `"0700"`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#file_permission SensitiveFile#file_permission}
   */
   readonly filePermission?: string;
@@ -48,7 +43,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   * The path to the file that will be created.
  Missing parent directories will be created.
  If the file already exists, it will be overridden with the given content.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#filename SensitiveFile#filename}
   */
   readonly filename: string;
@@ -56,7 +51,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   * Path to file to use as source for the one we are creating.
  Conflicts with `content` and `content_base64`.
  Exactly one of these three arguments must be specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#source SensitiveFile#source}
   */
   readonly source?: string;
