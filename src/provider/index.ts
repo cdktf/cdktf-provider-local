@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface LocalProviderConfig {
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs#alias LocalProvider#alias}
   */
   readonly alias?: string;

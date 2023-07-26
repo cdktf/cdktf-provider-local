@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataLocalFileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path to the file that will be read. The data source will return an error if the file does not exist.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/data-sources/file#filename DataLocalFile#filename}
   */
   readonly filename: string;
