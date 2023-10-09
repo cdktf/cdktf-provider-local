@@ -822,8 +822,8 @@ import "github.com/cdktf/cdktf-provider-local-go/local/v8/file"
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.filename">Filename</a></code> | <code>*string</code> | The path to the file that will be created. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.content">Content</a></code> | <code>*string</code> | Content to store in the file, expected to be a UTF-8 encoded string. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | Content to store in the file, expected to be binary encoded as base64 string. |
-| <code><a href="#@cdktf/provider-local.file.FileConfig.property.directoryPermission">DirectoryPermission</a></code> | <code>*string</code> | Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`. |
-| <code><a href="#@cdktf/provider-local.file.FileConfig.property.filePermission">FilePermission</a></code> | <code>*string</code> | Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`. |
+| <code><a href="#@cdktf/provider-local.file.FileConfig.property.directoryPermission">DirectoryPermission</a></code> | <code>*string</code> | Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`. |
+| <code><a href="#@cdktf/provider-local.file.FileConfig.property.filePermission">FilePermission</a></code> | <code>*string</code> | Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.sensitiveContent">SensitiveContent</a></code> | <code>*string</code> | Sensitive content to store in the file, expected to be an UTF-8 encoded string. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.source">Source</a></code> | <code>*string</code> | Path to file to use as source for the one we are creating. |
 
@@ -958,7 +958,7 @@ DirectoryPermission *string
 
 - *Type:* *string
 
-Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
+Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#directory_permission File#directory_permission}
 
@@ -972,7 +972,7 @@ FilePermission *string
 
 - *Type:* *string
 
-Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
+Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#file_permission File#file_permission}
 

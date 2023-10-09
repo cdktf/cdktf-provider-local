@@ -14,59 +14,59 @@ import * as cdktf from 'cdktf';
 export interface FileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Content to store in the file, expected to be a UTF-8 encoded string.
- Conflicts with `sensitive_content`, `content_base64` and `source`.
- Exactly one of these four arguments must be specified.
+  *  Conflicts with `sensitive_content`, `content_base64` and `source`.
+  *  Exactly one of these four arguments must be specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content File#content}
   */
   readonly content?: string;
   /**
   * Content to store in the file, expected to be binary encoded as base64 string.
- Conflicts with `content`, `sensitive_content` and `source`.
- Exactly one of these four arguments must be specified.
+  *  Conflicts with `content`, `sensitive_content` and `source`.
+  *  Exactly one of these four arguments must be specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content_base64 File#content_base64}
   */
   readonly contentBase64?: string;
   /**
   * Permissions to set for directories created (before umask), expressed as string in
- [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
- Default value is `"0777"`.
+  *  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
+  *  Default value is `"0777"`.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#directory_permission File#directory_permission}
   */
   readonly directoryPermission?: string;
   /**
   * Permissions to set for the output file (before umask), expressed as string in
- [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
- Default value is `"0777"`.
+  *  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
+  *  Default value is `"0777"`.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#file_permission File#file_permission}
   */
   readonly filePermission?: string;
   /**
   * The path to the file that will be created.
- Missing parent directories will be created.
- If the file already exists, it will be overridden with the given content.
+  *  Missing parent directories will be created.
+  *  If the file already exists, it will be overridden with the given content.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#filename File#filename}
   */
   readonly filename: string;
   /**
   * Sensitive content to store in the file, expected to be an UTF-8 encoded string.
- Will not be displayed in diffs.
- Conflicts with `content`, `content_base64` and `source`.
- Exactly one of these four arguments must be specified.
- If in need to use _sensitive_ content, please use the [`local_sensitive_file`](./sensitive_file.html)
- resource instead.
+  *  Will not be displayed in diffs.
+  *  Conflicts with `content`, `content_base64` and `source`.
+  *  Exactly one of these four arguments must be specified.
+  *  If in need to use _sensitive_ content, please use the [`local_sensitive_file`](./sensitive_file.html)
+  *  resource instead.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#sensitive_content File#sensitive_content}
   */
   readonly sensitiveContent?: string;
   /**
   * Path to file to use as source for the one we are creating.
- Conflicts with `content`, `sensitive_content` and `content_base64`.
- Exactly one of these four arguments must be specified.
+  *  Conflicts with `content`, `sensitive_content` and `content_base64`.
+  *  Exactly one of these four arguments must be specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#source File#source}
   */

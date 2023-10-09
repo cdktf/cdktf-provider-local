@@ -778,8 +778,8 @@ const sensitiveFileConfig: sensitiveFile.SensitiveFileConfig = { ... }
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.filename">filename</a></code> | <code>string</code> | The path to the file that will be created. |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.content">content</a></code> | <code>string</code> | Sensitive Content to store in the file, expected to be a UTF-8 encoded string. |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.contentBase64">contentBase64</a></code> | <code>string</code> | Sensitive Content to store in the file, expected to be binary encoded as base64 string. |
-| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.directoryPermission">directoryPermission</a></code> | <code>string</code> | Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0700"`. |
-| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.filePermission">filePermission</a></code> | <code>string</code> | Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0700"`. |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.directoryPermission">directoryPermission</a></code> | <code>string</code> | Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0700"`. |
+| <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.filePermission">filePermission</a></code> | <code>string</code> | Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0700"`. |
 | <code><a href="#@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.property.source">source</a></code> | <code>string</code> | Path to file to use as source for the one we are creating. |
 
 ---
@@ -865,7 +865,7 @@ public readonly filename: string;
 The path to the file that will be created.
 
 Missing parent directories will be created.
-If the file already exists, it will be overridden with the given content.
+ If the file already exists, it will be overridden with the given content.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#filename SensitiveFile#filename}
 
@@ -882,7 +882,7 @@ public readonly content: string;
 Sensitive Content to store in the file, expected to be a UTF-8 encoded string.
 
 Conflicts with `content_base64` and `source`.
-Exactly one of these three arguments must be specified.
+ Exactly one of these three arguments must be specified.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#content SensitiveFile#content}
 
@@ -899,7 +899,7 @@ public readonly contentBase64: string;
 Sensitive Content to store in the file, expected to be binary encoded as base64 string.
 
 Conflicts with `content` and `source`.
-Exactly one of these three arguments must be specified.
+ Exactly one of these three arguments must be specified.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#content_base64 SensitiveFile#content_base64}
 
@@ -913,7 +913,7 @@ public readonly directoryPermission: string;
 
 - *Type:* string
 
-Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0700"`.
+Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0700"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#directory_permission SensitiveFile#directory_permission}
 
@@ -927,7 +927,7 @@ public readonly filePermission: string;
 
 - *Type:* string
 
-Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0700"`.
+Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0700"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#file_permission SensitiveFile#file_permission}
 
@@ -944,7 +944,7 @@ public readonly source: string;
 Path to file to use as source for the one we are creating.
 
 Conflicts with `content` and `content_base64`.
-Exactly one of these three arguments must be specified.
+ Exactly one of these three arguments must be specified.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file#source SensitiveFile#source}
 

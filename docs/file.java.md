@@ -51,8 +51,8 @@ File.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-local.file.File.Initializer.parameter.filename">filename</a></code> | <code>java.lang.String</code> | The path to the file that will be created. |
 | <code><a href="#@cdktf/provider-local.file.File.Initializer.parameter.content">content</a></code> | <code>java.lang.String</code> | Content to store in the file, expected to be a UTF-8 encoded string. |
 | <code><a href="#@cdktf/provider-local.file.File.Initializer.parameter.contentBase64">contentBase64</a></code> | <code>java.lang.String</code> | Content to store in the file, expected to be binary encoded as base64 string. |
-| <code><a href="#@cdktf/provider-local.file.File.Initializer.parameter.directoryPermission">directoryPermission</a></code> | <code>java.lang.String</code> | Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`. |
-| <code><a href="#@cdktf/provider-local.file.File.Initializer.parameter.filePermission">filePermission</a></code> | <code>java.lang.String</code> | Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`. |
+| <code><a href="#@cdktf/provider-local.file.File.Initializer.parameter.directoryPermission">directoryPermission</a></code> | <code>java.lang.String</code> | Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`. |
+| <code><a href="#@cdktf/provider-local.file.File.Initializer.parameter.filePermission">filePermission</a></code> | <code>java.lang.String</code> | Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`. |
 | <code><a href="#@cdktf/provider-local.file.File.Initializer.parameter.sensitiveContent">sensitiveContent</a></code> | <code>java.lang.String</code> | Sensitive content to store in the file, expected to be an UTF-8 encoded string. |
 | <code><a href="#@cdktf/provider-local.file.File.Initializer.parameter.source">source</a></code> | <code>java.lang.String</code> | Path to file to use as source for the one we are creating. |
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
+Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#directory_permission File#directory_permission}
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
+Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#file_permission File#file_permission}
 
@@ -982,8 +982,8 @@ FileConfig.builder()
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.filename">filename</a></code> | <code>java.lang.String</code> | The path to the file that will be created. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.content">content</a></code> | <code>java.lang.String</code> | Content to store in the file, expected to be a UTF-8 encoded string. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.contentBase64">contentBase64</a></code> | <code>java.lang.String</code> | Content to store in the file, expected to be binary encoded as base64 string. |
-| <code><a href="#@cdktf/provider-local.file.FileConfig.property.directoryPermission">directoryPermission</a></code> | <code>java.lang.String</code> | Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`. |
-| <code><a href="#@cdktf/provider-local.file.FileConfig.property.filePermission">filePermission</a></code> | <code>java.lang.String</code> | Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`. |
+| <code><a href="#@cdktf/provider-local.file.FileConfig.property.directoryPermission">directoryPermission</a></code> | <code>java.lang.String</code> | Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`. |
+| <code><a href="#@cdktf/provider-local.file.FileConfig.property.filePermission">filePermission</a></code> | <code>java.lang.String</code> | Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.sensitiveContent">sensitiveContent</a></code> | <code>java.lang.String</code> | Sensitive content to store in the file, expected to be an UTF-8 encoded string. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.source">source</a></code> | <code>java.lang.String</code> | Path to file to use as source for the one we are creating. |
 
@@ -1118,7 +1118,7 @@ public java.lang.String getDirectoryPermission();
 
 - *Type:* java.lang.String
 
-Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
+Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#directory_permission File#directory_permission}
 
@@ -1132,7 +1132,7 @@ public java.lang.String getFilePermission();
 
 - *Type:* java.lang.String
 
-Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
+Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#file_permission File#file_permission}
 
