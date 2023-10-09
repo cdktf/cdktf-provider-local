@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.file.File.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v8/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/file"
 
 file.NewFile(scope Construct, id *string, config FileConfig) File
 ```
@@ -312,7 +312,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.file.File.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v8/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/file"
 
 file.File_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.file.File.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v8/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/file"
 
 file.File_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ file.File_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-local.file.File.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v8/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/file"
 
 file.File_IsTerraformResource(x interface{}) *bool
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.file.FileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v8/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/file"
 
 &file.FileConfig {
 	Connection: interface{},
@@ -822,8 +822,8 @@ import "github.com/cdktf/cdktf-provider-local-go/local/v8/file"
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.filename">Filename</a></code> | <code>*string</code> | The path to the file that will be created. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.content">Content</a></code> | <code>*string</code> | Content to store in the file, expected to be a UTF-8 encoded string. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | Content to store in the file, expected to be binary encoded as base64 string. |
-| <code><a href="#@cdktf/provider-local.file.FileConfig.property.directoryPermission">DirectoryPermission</a></code> | <code>*string</code> | Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`. |
-| <code><a href="#@cdktf/provider-local.file.FileConfig.property.filePermission">FilePermission</a></code> | <code>*string</code> | Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`. |
+| <code><a href="#@cdktf/provider-local.file.FileConfig.property.directoryPermission">DirectoryPermission</a></code> | <code>*string</code> | Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`. |
+| <code><a href="#@cdktf/provider-local.file.FileConfig.property.filePermission">FilePermission</a></code> | <code>*string</code> | Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.sensitiveContent">SensitiveContent</a></code> | <code>*string</code> | Sensitive content to store in the file, expected to be an UTF-8 encoded string. |
 | <code><a href="#@cdktf/provider-local.file.FileConfig.property.source">Source</a></code> | <code>*string</code> | Path to file to use as source for the one we are creating. |
 
@@ -958,7 +958,7 @@ DirectoryPermission *string
 
 - *Type:* *string
 
-Permissions to set for directories created (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
+Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#directory_permission File#directory_permission}
 
@@ -972,7 +972,7 @@ FilePermission *string
 
 - *Type:* *string
 
-Permissions to set for the output file (before umask), expressed as string in [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation). Default value is `"0777"`.
+Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#file_permission File#file_permission}
 
