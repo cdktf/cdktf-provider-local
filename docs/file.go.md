@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.file.File.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/file"
 
 file.NewFile(scope Construct, id *string, config FileConfig) File
 ```
@@ -374,7 +374,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.file.File.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/file"
 
 file.File_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.file.File.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/file"
 
 file.File_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ file.File_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-local.file.File.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/file"
 
 file.File_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ file.File_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-local.file.File.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/file"
 
 file.File_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -894,7 +894,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.file.FileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/file"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/file"
 
 &file.FileConfig {
 	Connection: interface{},
