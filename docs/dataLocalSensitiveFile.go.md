@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/datalocalsensitivefile"
 
 datalocalsensitivefile.NewDataLocalSensitiveFile(scope Construct, id *string, config DataLocalSensitiveFileConfig) DataLocalSensitiveFile
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -614,7 +614,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/v9/datalocalsensitivefile"
 
 &datalocalsensitivefile.DataLocalSensitiveFileConfig {
 	Connection: interface{},
