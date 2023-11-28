@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`local`](https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-local.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

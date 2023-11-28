@@ -1,7 +1,3 @@
-# `local_sensitive_file`
-
-Refer to the Terraform Registory for docs: [`local_sensitive_file`](https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file).
-
 # `sensitiveFile` Submodule <a name="`sensitiveFile` Submodule" id="@cdktf/provider-local.sensitiveFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 sensitivefile.NewSensitiveFile(scope Construct, id *string, config SensitiveFileConfig) SensitiveFile
 ```
@@ -367,7 +363,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 sensitivefile.SensitiveFile_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 sensitivefile.SensitiveFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ sensitivefile.SensitiveFile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 sensitivefile.SensitiveFile_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ sensitivefile.SensitiveFile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 sensitivefile.SensitiveFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -865,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.sensitiveFile.SensitiveFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/sensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/sensitivefile"
 
 &sensitivefile.SensitiveFileConfig {
 	Connection: interface{},
