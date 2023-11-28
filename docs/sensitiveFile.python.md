@@ -1,7 +1,3 @@
-# `local_sensitive_file`
-
-Refer to the Terraform Registory for docs: [`local_sensitive_file`](https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file).
-
 # `sensitiveFile` Submodule <a name="`sensitiveFile` Submodule" id="@cdktf/provider-local.sensitiveFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

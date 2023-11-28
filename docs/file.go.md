@@ -1,7 +1,3 @@
-# `local_file`
-
-Refer to the Terraform Registory for docs: [`local_file`](https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file).
-
 # `file` Submodule <a name="`file` Submodule" id="@cdktf/provider-local.file"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
