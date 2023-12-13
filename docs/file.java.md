@@ -4,7 +4,7 @@
 
 ### File <a name="File" id="@cdktf/provider-local.file.File"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file local_file}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file local_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.file.File.Initializer"></a>
 
@@ -123,7 +123,7 @@ The path to the file that will be created.
 Missing parent directories will be created.
 If the file already exists, it will be overridden with the given content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#filename File#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#filename File#filename}
 
 ---
 
@@ -136,7 +136,7 @@ Content to store in the file, expected to be a UTF-8 encoded string.
 Conflicts with `sensitive_content`, `content_base64` and `source`.
 Exactly one of these four arguments must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content File#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#content File#content}
 
 ---
 
@@ -149,7 +149,7 @@ Content to store in the file, expected to be binary encoded as base64 string.
 Conflicts with `content`, `sensitive_content` and `source`.
 Exactly one of these four arguments must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content_base64 File#content_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#content_base64 File#content_base64}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#directory_permission File#directory_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#directory_permission File#directory_permission}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#file_permission File#file_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#file_permission File#file_permission}
 
 ---
 
@@ -185,7 +185,7 @@ Exactly one of these four arguments must be specified.
 If in need to use *sensitive* content, please use the [`local_sensitive_file`](./sensitive_file.html)
 resource instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#sensitive_content File#sensitive_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#sensitive_content File#sensitive_content}
 
 ---
 
@@ -198,7 +198,7 @@ Path to file to use as source for the one we are creating.
 Conflicts with `content`, `sensitive_content` and `content_base64`.
 Exactly one of these four arguments must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#source File#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#source File#source}
 
 ---
 
@@ -660,7 +660,7 @@ The construct id used in the generated config for the File to import.
 
 The id of the existing File that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1219,7 +1219,7 @@ The path to the file that will be created.
 Missing parent directories will be created.
 If the file already exists, it will be overridden with the given content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#filename File#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#filename File#filename}
 
 ---
 
@@ -1236,7 +1236,7 @@ Content to store in the file, expected to be a UTF-8 encoded string.
 Conflicts with `sensitive_content`, `content_base64` and `source`.
 Exactly one of these four arguments must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content File#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#content File#content}
 
 ---
 
@@ -1253,7 +1253,7 @@ Content to store in the file, expected to be binary encoded as base64 string.
 Conflicts with `content`, `sensitive_content` and `source`.
 Exactly one of these four arguments must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#content_base64 File#content_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#content_base64 File#content_base64}
 
 ---
 
@@ -1267,7 +1267,7 @@ public java.lang.String getDirectoryPermission();
 
 Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#directory_permission File#directory_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#directory_permission File#directory_permission}
 
 ---
 
@@ -1281,7 +1281,7 @@ public java.lang.String getFilePermission();
 
 Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0777"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#file_permission File#file_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#file_permission File#file_permission}
 
 ---
 
@@ -1301,7 +1301,7 @@ Exactly one of these four arguments must be specified.
 If in need to use *sensitive* content, please use the [`local_sensitive_file`](./sensitive_file.html)
 resource instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#sensitive_content File#sensitive_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#sensitive_content File#sensitive_content}
 
 ---
 
@@ -1318,7 +1318,7 @@ Path to file to use as source for the one we are creating.
 Conflicts with `content`, `sensitive_content` and `content_base64`.
 Exactly one of these four arguments must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/file#source File#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/file#source File#source}
 
 ---
 
