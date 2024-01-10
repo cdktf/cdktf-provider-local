@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/resources/sensitive_file
 // generated from terraform resource schema
 
@@ -266,5 +261,49 @@ export class SensitiveFile extends cdktf.TerraformResource {
       filename: cdktf.stringToTerraform(this._filename),
       source: cdktf.stringToTerraform(this._source),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      content: {
+        value: cdktf.stringToHclTerraform(this._content),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_base64: {
+        value: cdktf.stringToHclTerraform(this._contentBase64),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory_permission: {
+        value: cdktf.stringToHclTerraform(this._directoryPermission),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_permission: {
+        value: cdktf.stringToHclTerraform(this._filePermission),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filename: {
+        value: cdktf.stringToHclTerraform(this._filename),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source: {
+        value: cdktf.stringToHclTerraform(this._source),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

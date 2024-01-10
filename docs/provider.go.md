@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.provider.LocalProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 provider.NewLocalProvider(scope Construct, id *string, config LocalProviderConfig) LocalProvider
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-local.provider.LocalProvider.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.provider.LocalProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-local.provider.LocalProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-local.provider.LocalProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.provider.LocalProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-local.provider.LocalProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-local.provider.LocalProvider.resetAlias">ResetAlias</a></code> | *No description.* |
@@ -110,6 +111,12 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-local.provider.LocalProvider.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-local.provider.LocalProvider.toMetadata"></a>
 
 ```go
@@ -144,7 +151,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.provider.LocalProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 provider.LocalProvider_IsConstruct(x interface{}) *bool
 ```
@@ -176,7 +183,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.provider.LocalProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 provider.LocalProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -190,7 +197,7 @@ provider.LocalProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-local.provider.LocalProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 provider.LocalProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -204,7 +211,7 @@ provider.LocalProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-local.provider.LocalProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 provider.LocalProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -389,7 +396,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.provider.LocalProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v9/provider"
+import "github.com/cdktf/cdktf-provider-local-go/local/provider"
 
 &provider.LocalProviderConfig {
 	Alias: *string,

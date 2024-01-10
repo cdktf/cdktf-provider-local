@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/file
 // generated from terraform resource schema
 
@@ -144,5 +139,19 @@ export class DataLocalFile extends cdktf.TerraformDataSource {
     return {
       filename: cdktf.stringToTerraform(this._filename),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      filename: {
+        value: cdktf.stringToHclTerraform(this._filename),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
