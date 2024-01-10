@@ -145,4 +145,18 @@ export class DataLocalSensitiveFile extends cdktf.TerraformDataSource {
       filename: cdktf.stringToTerraform(this._filename),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      filename: {
+        value: cdktf.stringToHclTerraform(this._filename),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
