@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/file
+// https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DataLocalFileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path to the file that will be read. The data source will return an error if the file does not exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/file#filename DataLocalFile#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/file#filename DataLocalFile#filename}
   */
   readonly filename: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/file local_file}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/file local_file}
 */
 export class DataLocalFile extends cdktf.TerraformDataSource {
 
@@ -37,7 +32,7 @@ export class DataLocalFile extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataLocalFile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLocalFile to import
-  * @param importFromId The id of the existing DataLocalFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLocalFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLocalFile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +44,7 @@ export class DataLocalFile extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/file local_file} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/file local_file} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +55,7 @@ export class DataLocalFile extends cdktf.TerraformDataSource {
       terraformResourceType: 'local_file',
       terraformGeneratorMetadata: {
         providerName: 'local',
-        providerVersion: '2.4.1',
+        providerVersion: '2.5.1',
         providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
