@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`local`](https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs).
+Refer to the Terraform Registry for docs: [`local`](https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs).
