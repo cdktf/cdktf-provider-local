@@ -4,12 +4,12 @@
 
 ### DataLocalSensitiveFile <a name="DataLocalSensitiveFile" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/sensitive_file local_sensitive_file}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/data-sources/sensitive_file local_sensitive_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v10/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 datalocalsensitivefile.NewDataLocalSensitiveFile(scope Construct, id *string, config DataLocalSensitiveFileConfig) DataLocalSensitiveFile
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v10/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v10/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v10/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datalocalsensitivefile.DataLocalSensitiveFile_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v10/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 datalocalsensitivefile.DataLocalSensitiveFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataLocalSensitiveFile to 
 
 The id of the existing DataLocalSensitiveFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/sensitive_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/data-sources/sensitive_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-local-go/local/v10/datalocalsensitivefile"
+import "github.com/cdktf/cdktf-provider-local-go/local/datalocalsensitivefile"
 
 &datalocalsensitivefile.DataLocalSensitiveFileConfig {
 	Connection: interface{},
@@ -775,7 +775,7 @@ Path to the file that will be read.
 
 The data source will return an error if the file does not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/sensitive_file#filename DataLocalSensitiveFile#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/data-sources/sensitive_file#filename DataLocalSensitiveFile#filename}
 
 ---
 
