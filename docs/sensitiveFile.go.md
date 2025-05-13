@@ -4,7 +4,7 @@
 
 ### SensitiveFile <a name="SensitiveFile" id="@cdktf/provider-local.sensitiveFile.SensitiveFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file local_sensitive_file}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file local_sensitive_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.sensitiveFile.SensitiveFile.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the SensitiveFile to import.
 
 The id of the existing SensitiveFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1033,7 +1033,7 @@ The path to the file that will be created.
 Missing parent directories will be created.
 If the file already exists, it will be overridden with the given content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#filename SensitiveFile#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#filename SensitiveFile#filename}
 
 ---
 
@@ -1050,7 +1050,7 @@ Sensitive Content to store in the file, expected to be a UTF-8 encoded string.
 Conflicts with `content_base64` and `source`.
 Exactly one of these three arguments must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#content SensitiveFile#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#content SensitiveFile#content}
 
 ---
 
@@ -1067,7 +1067,7 @@ Sensitive Content to store in the file, expected to be binary encoded as base64 
 Conflicts with `content` and `source`.
 Exactly one of these three arguments must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#content_base64 SensitiveFile#content_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#content_base64 SensitiveFile#content_base64}
 
 ---
 
@@ -1081,7 +1081,7 @@ DirectoryPermission *string
 
 Permissions to set for directories created (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0700"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#directory_permission SensitiveFile#directory_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#directory_permission SensitiveFile#directory_permission}
 
 ---
 
@@ -1095,7 +1095,7 @@ FilePermission *string
 
 Permissions to set for the output file (before umask), expressed as string in  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).  Default value is `"0700"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#file_permission SensitiveFile#file_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#file_permission SensitiveFile#file_permission}
 
 ---
 
@@ -1112,7 +1112,7 @@ Path to file to use as source for the one we are creating.
 Conflicts with `content` and `content_base64`.
 Exactly one of these three arguments must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#source SensitiveFile#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#source SensitiveFile#source}
 
 ---
 
