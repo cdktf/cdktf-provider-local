@@ -4,7 +4,7 @@
 
 ### DataLocalFile <a name="DataLocalFile" id="@cdktf/provider-local.dataLocalFile.DataLocalFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/data-sources/file local_file}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/data-sources/file local_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-local.dataLocalFile.DataLocalFile.Initializer"></a>
 
@@ -108,7 +108,7 @@ Path to the file that will be read.
 
 The data source will return an error if the file does not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/data-sources/file#filename DataLocalFile#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/data-sources/file#filename DataLocalFile#filename}
 
 ---
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the DataLocalFile to import.
 
 The id of the existing DataLocalFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/data-sources/file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/data-sources/file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ Path to the file that will be read.
 
 The data source will return an error if the file does not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/data-sources/file#filename DataLocalFile#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/data-sources/file#filename DataLocalFile#filename}
 
 ---
 
