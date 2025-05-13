@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file
+// https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +12,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   *  Conflicts with `content_base64` and `source`.
   *  Exactly one of these three arguments must be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#content SensitiveFile#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#content SensitiveFile#content}
   */
   readonly content?: string;
   /**
@@ -25,7 +20,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   *  Conflicts with `content` and `source`.
   *  Exactly one of these three arguments must be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#content_base64 SensitiveFile#content_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#content_base64 SensitiveFile#content_base64}
   */
   readonly contentBase64?: string;
   /**
@@ -33,7 +28,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   *  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
   *  Default value is `"0700"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#directory_permission SensitiveFile#directory_permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#directory_permission SensitiveFile#directory_permission}
   */
   readonly directoryPermission?: string;
   /**
@@ -41,7 +36,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   *  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
   *  Default value is `"0700"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#file_permission SensitiveFile#file_permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#file_permission SensitiveFile#file_permission}
   */
   readonly filePermission?: string;
   /**
@@ -49,7 +44,7 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   *  Missing parent directories will be created.
   *  If the file already exists, it will be overridden with the given content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#filename SensitiveFile#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#filename SensitiveFile#filename}
   */
   readonly filename: string;
   /**
@@ -57,13 +52,13 @@ export interface SensitiveFileConfig extends cdktf.TerraformMetaArguments {
   *  Conflicts with `content` and `content_base64`.
   *  Exactly one of these three arguments must be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#source SensitiveFile#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#source SensitiveFile#source}
   */
   readonly source?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file local_sensitive_file}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file local_sensitive_file}
 */
 export class SensitiveFile extends cdktf.TerraformResource {
 
@@ -79,7 +74,7 @@ export class SensitiveFile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SensitiveFile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SensitiveFile to import
-  * @param importFromId The id of the existing SensitiveFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SensitiveFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SensitiveFile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -91,7 +86,7 @@ export class SensitiveFile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs/resources/sensitive_file local_sensitive_file} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/sensitive_file local_sensitive_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +97,7 @@ export class SensitiveFile extends cdktf.TerraformResource {
       terraformResourceType: 'local_sensitive_file',
       terraformGeneratorMetadata: {
         providerName: 'local',
-        providerVersion: '2.5.2',
+        providerVersion: '2.5.3',
         providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
