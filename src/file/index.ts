@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file
+// https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +17,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   *  Conflicts with `sensitive_content`, `content_base64` and `source`.
   *  Exactly one of these four arguments must be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file#content File#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file#content File#content}
   */
   readonly content?: string;
   /**
@@ -25,7 +25,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   *  Conflicts with `content`, `sensitive_content` and `source`.
   *  Exactly one of these four arguments must be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file#content_base64 File#content_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file#content_base64 File#content_base64}
   */
   readonly contentBase64?: string;
   /**
@@ -33,7 +33,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   *  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
   *  Default value is `"0777"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file#directory_permission File#directory_permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file#directory_permission File#directory_permission}
   */
   readonly directoryPermission?: string;
   /**
@@ -41,7 +41,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   *  [numeric notation](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation).
   *  Default value is `"0777"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file#file_permission File#file_permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file#file_permission File#file_permission}
   */
   readonly filePermission?: string;
   /**
@@ -49,7 +49,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   *  Missing parent directories will be created.
   *  If the file already exists, it will be overridden with the given content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file#filename File#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file#filename File#filename}
   */
   readonly filename: string;
   /**
@@ -60,7 +60,7 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   *  If in need to use _sensitive_ content, please use the [`local_sensitive_file`](./sensitive_file.html)
   *  resource instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file#sensitive_content File#sensitive_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file#sensitive_content File#sensitive_content}
   */
   readonly sensitiveContent?: string;
   /**
@@ -68,13 +68,13 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   *  Conflicts with `content`, `sensitive_content` and `content_base64`.
   *  Exactly one of these four arguments must be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file#source File#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file#source File#source}
   */
   readonly source?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file local_file}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file local_file}
 */
 export class File extends cdktf.TerraformResource {
 
@@ -90,7 +90,7 @@ export class File extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a File resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the File to import
-  * @param importFromId The id of the existing File that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing File that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the File to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -102,7 +102,7 @@ export class File extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/resources/file local_file} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/resources/file local_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,7 @@ export class File extends cdktf.TerraformResource {
       terraformResourceType: 'local_file',
       terraformGeneratorMetadata: {
         providerName: 'local',
-        providerVersion: '2.5.3',
+        providerVersion: '2.6.1',
         providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
