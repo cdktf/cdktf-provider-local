@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [dataLocalCommand](./dataLocalCommand.go.md)
 - [dataLocalFile](./dataLocalFile.go.md)
 - [dataLocalSensitiveFile](./dataLocalSensitiveFile.go.md)
 - [file](./file.go.md)

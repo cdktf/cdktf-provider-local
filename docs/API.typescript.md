@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [dataLocalCommand](./dataLocalCommand.typescript.md)
 - [dataLocalFile](./dataLocalFile.typescript.md)
 - [dataLocalSensitiveFile](./dataLocalSensitiveFile.typescript.md)
 - [file](./file.typescript.md)

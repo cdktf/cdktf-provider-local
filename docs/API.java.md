@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [dataLocalCommand](./dataLocalCommand.java.md)
 - [dataLocalFile](./dataLocalFile.java.md)
 - [dataLocalSensitiveFile](./dataLocalSensitiveFile.java.md)
 - [file](./file.java.md)
