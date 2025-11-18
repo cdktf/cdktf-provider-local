@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [dataLocalCommand](./dataLocalCommand.csharp.md)
 - [dataLocalFile](./dataLocalFile.csharp.md)
 - [dataLocalSensitiveFile](./dataLocalSensitiveFile.csharp.md)
 - [file](./file.csharp.md)

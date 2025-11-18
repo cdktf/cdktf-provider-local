@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [dataLocalCommand](./dataLocalCommand.python.md)
 - [dataLocalFile](./dataLocalFile.python.md)
 - [dataLocalSensitiveFile](./dataLocalSensitiveFile.python.md)
 - [file](./file.python.md)
